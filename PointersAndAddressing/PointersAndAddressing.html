@@ -178,20 +178,8 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="lab-6-c-pointers-and-addressing"><a class="header" href="#lab-6-c-pointers-and-addressing">Lab 6: C Pointers and Addressing</a></h1>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-In this lab you will be introduce to pointers and addressing as tool to understand computer memory.</p>
+<p>In this lab, you will be introduced to pointers and addressing as a tool to understand computer memory.</p>
 <ol>
-<li>
-<p>Create a new C++ Console project called <code>PointersAndAddressing</code>.</p>
-</li>
-<li>
-<p>Remember to rename the <code>PointersAndAddressing.cpp</code> to <code>PointersAndAddressing.c</code></p>
-</li>
-<li>
-<p>Open <code>PointersAndAddressing.c</code> and modify to look like below:
-=======
-In this lab, you will be introduced to pointers and addressing as a tool to understand computer memory.</p>
-</li>
 <li>
 <p>Create a new C++ Console project called <code>PointersAndAddressing</code>.</p>
 </li>
@@ -200,78 +188,25 @@ In this lab, you will be introduced to pointers and addressing as a tool to unde
 </li>
 <li>
 <p>Open <code>PointersAndAddressing.c</code> and modify it to look like the below:</p>
-</li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>```c
-#include &lt;stdio.h&gt;
+<pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main(){
 
     return 0;
 }
-```
 </code></pre>
+</li>
+</ol>
 <h2 id="section-1-pointers"><a class="header" href="#section-1-pointers">Section 1: Pointers</a></h2>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Now it's time to see the why C is used for the basis of nearly all programming languages, operating systems, and embedded code.</p>
-<h1 id="pointers-in-c-are-relativley-easy-and-fun-to-learn-some-c-programming-tasks-are-performed-more-easily-with-pointers-and-other-tasks-such-as-dynamic-memory-allocation-cannot-be-performed-without-using-pointers"><a class="header" href="#pointers-in-c-are-relativley-easy-and-fun-to-learn-some-c-programming-tasks-are-performed-more-easily-with-pointers-and-other-tasks-such-as-dynamic-memory-allocation-cannot-be-performed-without-using-pointers">Pointers in C are relativley easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers.</a></h1>
 <p>Now it's time to see why C is used as the basis of nearly all programming languages, operating systems, and embedded code.</p>
 <p>Pointers in C are relatively easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <p>Therefore it is necessary to learn pointers to become a perfect C programmer.</p>
 <p>Let's start learning them in simple and easy steps.</p>
 <p>Every variable is a memory location and every memory location has its address defined which can be accessed using ampersand <code>&amp;</code> operator, which denotes an address in memory.</p>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-4. Modify <code>main()</code> by entering the following code:</h1>
 <ol>
-<li>Modify <code>main()</code> by entering the following code:</li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>```
-...
+<li>
+<p>Modify <code>main()</code> by entering the following code:</p>
+<pre><code>...
     int a=1, b =2 ,c =0;
 
     printf("Address for the variable a: %lu \n", (long)&amp;a); // long casts the value in &amp;a to a long integer, upto 32 bits
@@ -279,93 +214,40 @@ Now it's time to see the why C is used for the basis of nearly all programming l
     printf("Address for the variable c: %lu \n", (long)&amp;c);
     return 0;
 }
-```
-
-&gt;Note: the `...` in the code blocks means that there is code above or below that remains the same.
-
-&lt;details&gt;
-&lt;summary&gt;&lt;b&gt;Click for Expected Output&lt;/b&gt;&lt;/summary&gt;
-&lt;p&gt;&lt;/p&gt;
-
-![](./figures/step1.png)
-
-&lt;/details&gt;
-</code></pre>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-So it looks like the address are almost next to each other, we call this <strong>contiguous</strong>.</h1>
-<pre><code>So it looks like the addresses are almost next to each other, we call this **contiguous**.
 </code></pre>
 <blockquote>
+<p>Note: the <code>...</code> in the code blocks means that there is code above or below that remains the same.</p>
+</blockquote>
+ <details>
+ <summary><b>Click for Expected Output</b></summary>
+ <p></p>
+<p><img src="./figures/step1.png" alt="" /></p>
+ </details>
+<p>So it looks like the addresses are almost next to each other, we call this <strong>contiguous</strong>.</p>
 <blockquote>
+<p><strong>Notes:</strong></p>
 <blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
+<ul>
+<li>We must use format specifiers to tell the <code>printf()</code> how we would like our variables to be displayed.</li>
+<li>So, <code>%</code> is the character for promising a specifier -&gt; <code>%lu</code> means <code>unsigned long</code> and is 32 bits in size.</li>
+<li>memory address are <strong>never</strong> negative.</li>
+</ul>
 </blockquote>
 </blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>&gt; **Notes:**
-&gt;&gt; - We must use format specifiers to tell the `printf()` how we would like our variables to be displayed.
-&gt;&gt; - So, `%` is the character for promising a specifier -&gt; `%lu` means `unsigned long` and is 32 bits in size. 
-&gt;&gt;- memory address are **never** negative.
-</code></pre>
-<ol start="5">
+</li>
 <li>
 <p>What would happen to the addresses if you ran the code again? <strong>Try it!</strong></p>
  <details>
  <summary>Well...</summary>
 <p><img src="./figures/step2.png" alt="" /></p>
+<p>You should have received different memory address locations, because of the <strong>Address Space Layout Randomiser</strong> (ASLR) which provides a random address space for security reasons. Consider if someone wanted to get certain information and know where it was stored all the</p>
+ </details>
 </li>
 </ol>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-You should have recieved different memory address locations, this because of the <strong>Address Space Layout Randomiser</strong> (ASLR) which provides a random address space for security reason. Consider if someone wanted to get certain information and new where it was stored all the time?</p>
-<p>=======
-You should have received different memory address locations, because of the <strong>Address Space Layout Randomiser</strong> (ASLR) which provides a random address space for security reasons. Consider if someone wanted to get certain information and know where it was stored all the</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev
-</details></p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <h2 id="section-2-what-are-pointers"><a class="header" href="#section-2-what-are-pointers">Section 2: What are Pointers?</a></h2>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-A <strong>pointer</strong> is a variable whose value is the address of another variable, i.e., direct address of the memory location. Like any variable or constant, you must declare a pointer before using it to store any variable address. The general form of a pointer variable declaration is <code>type var-name</code>.</p>
-<p>Here, type is the pointer's base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk <code>*</code> used to declare a pointer is the same asterisk used for multiplication.</p>
-<h1 id="however-in-this-statement-the-asterisk-is-being-used-to-designate-a-variable-as-a-pointer-take-a-look-at-some-of-the-valid-pointer-declarations"><a class="header" href="#however-in-this-statement-the-asterisk-is-being-used-to-designate-a-variable-as-a-pointer-take-a-look-at-some-of-the-valid-pointer-declarations">However, in this statement the asterisk is being used to designate a variable as a pointer. Take a look at some of the valid pointer declarations:</a></h1>
 <p>A <strong>pointer</strong> is a variable whose value is the address of another variable, i.e., the direct address of the memory location. Like any variable or constant, you must declare a pointer before using it to store any variable address. The general form of a pointer variable declaration is <code>type var-name</code>.</p>
 <p>Here, type is the pointer's base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk <code>*</code> used to declare a pointer is the same asterisk used for multiplication.</p>
 <p>However, in this statement, the asterisk is being used to designate a variable as a pointer. Take a look at some of the valid pointer declarations:</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <pre><code class="language-c">int    *ip;    /* pointer to an integer */
 double *dp;    /* pointer to a double */
 float  *fp;    /* pointer to a float */
@@ -379,35 +261,11 @@ char   *ch     /* pointer to a character */
 <li><strong>(b)</strong> assign the address of a variable to a pointer, and</li>
 <li><strong>(c)</strong> finally access the value at the address available in the pointer variable.</li>
 </ul>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-This is done by using unary operator <code>*</code> that returns the value of the variable located at the address specified by its operand. The following example makes use of these operations.</p>
+<p>This is done by using the unary operator <code>*</code> that returns the value of the variable located at the address specified by its operand. The following example makes use of these operations.</p>
 <ol start="6">
 <li>
-<p>Again edit the contents of <code>main()</code> to match below:
-=======
-This is done by using the unary operator <code>*</code> that returns the value of the variable located at the address specified by its operand. The following example makes use of these operations.</p>
-</li>
-<li>
 <p>Again edit the contents of <code>main()</code> to match the below:</p>
-</li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>``` c
-#include &lt;stdio.h&gt;
+<pre><code class="language-c">#include &lt;stdio.h&gt;
 
 int main () {
 
@@ -429,36 +287,17 @@ int main () {
 
     return 0;
 }
-```
 </code></pre>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-7. Run the code and you should see something similar to below,remember to compile first:</h1>
-<ol start="7">
-<li>Run the code and you should see something similar to below, remember to compile first:</li>
+</li>
+<li>
+<p>Run the code and you should see something similar to below, remember to compile first:</p>
+ <details>
+ <summary><b>Click for Expected Output</b></summary>
+ <p></p>
+<p><img src="./figures/step3.png" alt="" /></p>
+ </details>
+</li>
 </ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>&lt;details&gt;
-&lt;summary&gt;&lt;b&gt;Click for Expected Output&lt;/b&gt;&lt;/summary&gt;
-&lt;p&gt;&lt;/p&gt;
-
-![](./figures/step3.png)
-
-&lt;/details&gt;
-</code></pre>
 <hr />
 <h2 id="section-4-null-pointers"><a class="header" href="#section-4-null-pointers">Section 4: Null Pointers</a></h2>
 <p>It is always a good practice to assign a <code>NULL</code> value to a pointer variable in case you do not have an exact address to be assigned.</p>
@@ -520,17 +359,8 @@ if(!ptr)    /* succeeds if p is null */
 </ul>
 </li>
 <li>
-<p><strong>Pointer to pointer</strong>
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<p><strong>Pointer to pointer</strong></p>
 <ul>
-<li>C allows you to have pointer on a pointer and so on.</li>
-</ul>
-</li>
-<li>
-<p><strong>Passing pointers to functions in C</strong></p>
-<ul>
-<li>Passing an argument by reference or by address enable the passed argument to be changed in the calling function by the called function.
-=======</li>
 <li>C allows you to have a pointer on a pointer and so on.</li>
 </ul>
 </li>
@@ -540,24 +370,8 @@ if(!ptr)    /* succeeds if p is null */
 <li>Passing an argument by reference or by address enables the passed argument to be changed in the calling function by the called function.</li>
 </ul>
 </li>
-</ul>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<ul>
-<li><strong>Return pointer from functions in C</strong>
+<li>
+<p><strong>Return pointer from functions in C</strong></p>
 <ul>
 <li>C allows a function to return a pointer to the local variable, static variable, and dynamically allocated memory as well.</li>
 </ul>
@@ -565,28 +379,9 @@ if(!ptr)    /* succeeds if p is null */
 </ul>
 <hr />
 <h2 id="section-6-exploring-the-memory"><a class="header" href="#section-6-exploring-the-memory">Section 6: Exploring the memory</a></h2>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Now we can explore memory in a more detail way.</p>
-<p>So one crucial thing to note here is that accessing memory locations and changes their values can be fatal for a system.</p>
-<h1 id="it-is-relativley-simple-to-access-memory-addresses-around-your-own-entry-point-lets-assume-you-assign-a-variable-called-a-and-then-you-get-the-memory-address-after-you-have-this-address-you-have-a-starting-pointing-to-explore"><a class="header" href="#it-is-relativley-simple-to-access-memory-addresses-around-your-own-entry-point-lets-assume-you-assign-a-variable-called-a-and-then-you-get-the-memory-address-after-you-have-this-address-you-have-a-starting-pointing-to-explore">It is relativley simple to access memory addresses around your own entry point, let's assume you assign a variable called <code>a</code> and then you get the memory address. After you have this address you have a starting pointing to explore.</a></h1>
 <p>Now we can explore memory in a more detailed way.</p>
 <p>So one crucial thing to note here is that accessing memory locations and changing their values can be fatal for a system.</p>
 <p>It is relatively simple to access memory addresses around your entry point, let's assume you assign a variable called <code>a</code> and then you get the memory address. After you have this address you have a starting point to explore.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <p>Modify <code>main()</code> with the following code snippets, remember to include the <code>#include&lt;stdio.h&gt;</code> and <code>int main(){return 0;}</code> lines of code:</p>
 <ol>
 <li>
@@ -619,63 +414,21 @@ Now we can explore memory in a more detail way.</p>
 }
 </code></pre>
 </li>
-</ol>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-5.  Inside the for loop between the braces { } enter this line to print out the values to console.</h1>
-<ol start="5">
-<li>Inside the for loop between the braces { } enter this line to print out the values to the console.</li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>``` c
-printf(" %lu      ||    %d \t\t \n",(unsigned long)
+<li>
+<p>Inside the for loop between the braces { } enter this line to print out the values to the console.</p>
+<pre><code class="language-c">printf(" %lu      ||    %d \t\t \n",(unsigned long)
 
 pointer,(unsigned int)*pointer);
-```
 </code></pre>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-6.  Finally, we need to take one off of the pointer's value thereby decreasing the address. Add the following direcitly on the line below<code>printf();</code></h1>
-<ol start="6">
-<li>Finally, we need to take one off of the pointer's value thereby decreasing the address. Add the following directly on the line below <code>printf();</code></li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>``` c
-pointer = pointer - 1;
-```
-
-&lt;details&gt;
-&lt;summary&gt;&lt;b&gt;Click for Full Code&lt;/b&gt;&lt;/summary&gt;
-&lt;p&gt;&lt;/p&gt;
-
-```c
-#include &lt;stdio.h&gt;
+</li>
+<li>
+<p>Finally, we need to take one off of the pointer's value thereby decreasing the address. Add the following directly on the line below <code>printf();</code></p>
+<pre><code class="language-c">pointer = pointer - 1;
+</code></pre>
+<details>
+<summary><b>Click for Full Code</b></summary>
+<p></p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
 int main () {
    // define your variables in this region 
     int bin = 10;
@@ -698,53 +451,23 @@ int main () {
     // end of for loop
     return 0;
 }
-```
-&lt;/details&gt;
 </code></pre>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-7. Run the code and you should see something like below:</h1>
-<ol start="7">
-<li>Run the code and you should see something like the below:</li>
-</ol>
+</details>
+</li>
+<li>
+<p>Run the code and you should see something like the below:</p>
+ <details>
+ <summary><b>Click for Expected Output</b></summary>
+ <p></p>
+<p><img src="./figures/step5.png" alt="" /></p>
+ </details>
 <blockquote>
+<p><strong>Note:</strong></p>
 <blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
+<p>Remember you will get different memory address and other than the <code>123456789</code> value the rest of the values are generally nonsense, unless they are used by the program.</p>
 </blockquote>
 </blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>&lt;details&gt;
-&lt;summary&gt;&lt;b&gt;Click for Expected Output&lt;/b&gt;&lt;/summary&gt;
-&lt;p&gt;&lt;/p&gt;
-
-![](./figures/step5.png)
-
-&lt;/details&gt;
-
-&gt;**Note:**
-&gt;
-&gt;&gt; Remember you will get different memory address and other than the `123456789` value the rest of the values are generally nonsense, unless they are used by the program.
-</code></pre>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <ul>
-<li>
-<p>Now that the script has executed you can see we have a list of 10 memory addresses and the values those address hold.</p>
-</li>
-<li>
-<p>Again we see <strong>contiguous</strong> memory seperated by 4 byte address spaces.</p>
-</li>
-<li>
-<p>We can see our the that on the first time the loop executes we get the memory address of our variable <code>bin</code> and the subsequent value of stored in the address <code>123456789</code>.
-=======</p>
-</li>
 <li>
 <p>Now that the script has executed you can see we have a list of 10 memory addresses and the values those addresses hold.</p>
 </li>
@@ -754,55 +477,19 @@ int main () {
 <li>
 <p>We can see the first time the loop executes we get the memory address of our variable <code>bin</code> and the subsequent value stored in the address <code>123456789</code>.</p>
 </li>
+<li>
+<p>However, we can also see that as the for loop continues looping through we get our list of memory addresses and values inside those memory addresses.</p>
+</li>
 </ul>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<ul>
-<li>However, we can also see that as the for loop continues looping through we get our list of memory addresses and values inside those memory addresses.</li>
-</ul>
+</li>
+</ol>
 <h2 id="subsection-61-arrays"><a class="header" href="#subsection-61-arrays">Subsection 6.1: Arrays</a></h2>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-So lets quickly look at arrays from a memory prespective.</p>
+<p>So let's quickly look at arrays from a memory perspective.</p>
 <p>The <code>C</code> programming language can store arrays of any data type; <code>int</code>, <code>float</code>, <code>char</code>,... etc.</p>
 <ol start="8">
-<li>This time we will store a <code>char[]</code> and print out the each element of the array and the corresponding memory address which will be formatted as a hexadecimal number. Modifiy <code>main()</code> to look like the following code:
-=======
-So let's quickly look at arrays from a memory perspective.</li>
-</ol>
-<p>The <code>C</code> programming language can store arrays of any data type; <code>int</code>, <code>float</code>, <code>char</code>,... etc.</p>
-<ol start="8">
-<li>This time we will store a <code>char[]</code> and print out each element of the array and the corresponding memory address which will be formatted as a hexadecimal number. Modify <code>main()</code> to look like the following code:</li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>``` c
-#include&lt;stdio.h&gt;
+<li>
+<p>This time we will store a <code>char[]</code> and print out each element of the array and the corresponding memory address which will be formatted as a hexadecimal number. Modify <code>main()</code> to look like the following code:</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
 #include&lt;stdlib.h&gt;
 int main ()
 {
@@ -829,9 +516,8 @@ int main ()
 
     return 0;
 }
-```
 </code></pre>
-<ol start="9">
+</li>
 <li>
 <p>Run this code and see the expected output below:</p>
  <details>
@@ -856,24 +542,7 @@ int main ()
 <p>To allocate memory dynamically, library functions are <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code> and <code>free()</code> are used. These functions are defined in the <code>&lt;stdlib.h&gt;</code> header file.</p>
 <h3 id="subsection-71-malloc"><a class="header" href="#subsection-71-malloc">Subsection 7.1: <code>malloc()</code></a></h3>
 <p>The name <code>malloc</code> stands for <strong>m</strong>emory <strong>alloc</strong>ation.</p>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-The <code>malloc()</code> function reserves a block of memory of the specified number of bytes. And, it returns a pointer of <code>void</code> which can be casted into pointers of any form.</h1>
 <p>The <code>malloc()</code> function reserves a block of memory of the specified number of bytes. And, it returns a pointer of <code>void</code> which can be cast into pointers of any form.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <pre><code class="language-c">ptr = (castType*) malloc(size);
 </code></pre>
 <p>Example:</p>
@@ -891,50 +560,15 @@ The <code>malloc()</code> function reserves a block of memory of the specified n
 </code></pre>
 <p>The above statement allocates contiguous space in memory for 25 elements of type <code>float</code>.</p>
 <h3 id="subsection-73-free"><a class="header" href="#subsection-73-free">Subsection 7.3: <code>free()</code></a></h3>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Dynamically allocated memory created with either <code>calloc()</code> or <code>malloc()</code> doesn't get freed on their own. You must explicitly use <code>free()</code> to release the space.</h1>
 <p>Dynamically allocated memory created with either <code>calloc()</code> or <code>malloc()</code> doesn't get freed on its own. You must explicitly use <code>free()</code> to release the space.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <pre><code class="language-c">free(ptr);
 </code></pre>
 <p>This statement frees the space allocated in the memory pointed by <code>ptr</code>.</p>
 <h4 id="example-1"><a class="header" href="#example-1">Example 1:</a></h4>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-10. Modify <code>main()</code> again so that and reproduce the following code  so that the program dynamically allocates the memory for <code>n</code> number of <code>int</code>s using <code>malloc()</code> and <code>free()</code>:</h1>
 <ol>
-<li>Modify <code>main()</code> again and reproduce the following code  so that the program dynamically allocates the memory for <code>n</code> number of <code>int</code>s using <code>malloc()</code> and <code>free()</code>:</li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>```c
-// Program to calculate the sum of n numbers entered by the user
+<li>
+<p>Modify <code>main()</code> again and reproduce the following code  so that the program dynamically allocates the memory for <code>n</code> number of <code>int</code>s using <code>malloc()</code> and <code>free()</code>:</p>
+<pre><code class="language-c">// Program to calculate the sum of n numbers entered by the user
 
 #include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
@@ -967,35 +601,16 @@ free(ptr);
 return 0;
 }
 
-```
 </code></pre>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-11. Run the program and try to enter a number equal to or than greater that zero:</h1>
-<ol start="2">
-<li>Run the program and try to enter a number equal to or greater than zero:</li>
+</li>
+<li>
+<p>Run the program and try to enter a number equal to or greater than zero:</p>
+<details>
+<summary>Output...</summary>
+<p><img src="./figures/step7.png" alt="" /></p>
+</details>
+</li>
 </ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>&lt;details&gt;
-&lt;summary&gt;Output...&lt;/summary&gt;
-
-![](./figures/step7.png)
-
-&lt;/details&gt;
-</code></pre>
 <h3 id="example-2"><a class="header" href="#example-2">Example 2:</a></h3>
 <ol start="12">
 <li>
@@ -1043,28 +658,10 @@ return 0;
 </code></pre>
 <p>Here, <code>ptr</code> is reallocated with a new size <code>x</code>.</p>
 <h3 id="example-3"><a class="header" href="#example-3">Example 3:</a></h3>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-14. Modify <code>main()</code> again so that and reproduce the following code that dynamically allocates the memory for <code>n</code> number of <code>int</code> using <code>malloc()</code>, <code>realloc()</code> and <code>free()</code>:</h1>
 <ol start="14">
-<li>Modify <code>main()</code> again so that and reproduce the following code that dynamically allocates the memory for <code>n</code> number of <code>int</code> using <code>malloc()</code>, <code>realloc()</code>, and <code>free()</code>:</li>
-</ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>```c
-#include &lt;stdio.h&gt;
+<li>
+<p>Modify <code>main()</code> again so that and reproduce the following code that dynamically allocates the memory for <code>n</code> number of <code>int</code> using <code>malloc()</code>, <code>realloc()</code>, and <code>free()</code>:</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 
 int main() {
@@ -1092,81 +689,26 @@ free(ptr);
 
 return 0;
 }
-```
 </code></pre>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-15. Run the program and remeber the enter a number equal to or greater than zero:</h1>
-<ol start="15">
-<li>Run the program and remember the enter a number equal to or greater than zero:</li>
+</li>
+<li>
+<p>Run the program and remember the enter a number equal to or greater than zero:</p>
+<details>
+<summary>Output...</summary>
+<p><img src="./figures/step9.png" alt="" /></p>
+</details>
+</li>
 </ol>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<pre><code>&lt;details&gt;
-&lt;summary&gt;Output...&lt;/summary&gt;
-
-![](./figures/step9.png)
-
-&lt;/details&gt;
-</code></pre>
 <h2 id="section-8-memory-allocations-system-calls"><a class="header" href="#section-8-memory-allocations-system-calls">Section 8: Memory Allocations (System Calls)</a></h2>
 <p>If you are a computer programmer, (which all of you will be) you should know more about memory allocation. When looking at the allocation process, it is necessary to go into a little detail on Linux and the <code>glibc</code> library.</p>
 <p>When applications need memory, they have to request it from the operating system. This request from the kernel will naturally require a system call. You cannot allocate memory yourself in user mode.</p>
 <p>The <code>malloc()</code> family of functions is responsible for memory allocation in the <code>C</code> language(which we have been doing for a few exercises). The question to ask here is whether <code>malloc()</code>, as a glibc function, makes a direct system call.</p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-There is no system call called <code>malloc()</code> in the Linux kernel. However, there are two system calls for applications memory demands, which are <code>brk</code> and <code>mmap</code>.</p>
-<p>Since you will be requesting memory in your application via glibc functions, you may be wondering which of these system calls glibc is using at this point. The answer is both.</p>
-<h1 id="here-is-the-graphic-for-memory-allocation-that-we-looked-at-the-in-the-lecture-to-remind-you-of-key-concepts"><a class="header" href="#here-is-the-graphic-for-memory-allocation-that-we-looked-at-the-in-the-lecture-to-remind-you-of-key-concepts">Here is the graphic for memory allocation that we looked at the in the lecture, to remind you of key concepts.</a></h1>
 <p>There is no system call called <code>malloc()</code> in the Linux kernel. However, there are two system calls for an application's memory demands, which are <code>brk</code> and <code>mmap</code>.</p>
 <p>Since you will be requesting memory in your application via glibc functions, you may be wondering which of these system calls glibc is using at this point. The answer is both.</p>
 <p>Here is the graphic for memory allocation, to remind you of key concepts.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 <p><img src="./figures/process_memory_application_graphic" alt="" /></p>
 <h2 id="section-9-extra-work"><a class="header" href="#section-9-extra-work">Section 9: Extra work</a></h2>
-<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-Combine what you have learnt in this lab to advance your understanding of what you have achieved.</h1>
 <p>Combine what you have learned in this lab to advance your understanding of what you have achieved.</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>dev</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
 
                     </main>
 
