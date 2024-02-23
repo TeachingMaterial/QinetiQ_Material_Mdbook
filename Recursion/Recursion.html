@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Recursion - QinetiQ Material - University of Greenwich</title>
+        <title>Recursion - QinetiQ Material MdBook - University of Greenwich</title>
 
 
         <!-- Custom HTML head -->
@@ -142,13 +142,13 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">QinetiQ Material - University of Greenwich</h1>
+                    <h1 class="menu-title">QinetiQ Material MdBook - University of Greenwich</h1>
 
                     <div class="right-buttons">
-                        <a href="https://github.com/TeachingMaterial/QinetiQMaterial" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/TeachingMaterial/QinetiQMaterial/edit/master/content/Recursion/Recursion.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook/edit/master/content/Recursion/Recursion.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -227,31 +227,71 @@ int main(){
 }
 </code></pre>
 </li>
-<li>
-<p>Underneath the line <code>#include &lt;stdio.h&gt;</code> add the defintion of a new function called factorial that returns an <code>int</code> and takes one argument which is also an <code>int</code>.</p>
-<details>
-<summary>Solution</summary>
-<pre><code class="language-c">int factorial(int n);
-</code></pre>
-</details>
-</li>
 </ol>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+3. Underneath the line <code>#include &lt;stdio.h&gt;</code> add the defintion of a new function called factorial that returns an <code>int</code> and takes one argument which is also an <code>int</code>.</h1>
+<ol start="3">
+<li>Underneath the line <code>#include &lt;stdio.h&gt;</code> add the definition of a new function called factorial that returns an <code>int</code> and takes one argument which is also an <code>int</code>.</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+   <details>
+   <summary>Solution</summary>
+<pre><code>```c
+int factorial(int n);
+```
+</code></pre>
+   </details>
 <p></p>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+4. After the closing <code>}</code> of <code>main()</code> write the factorial function that has just been defined, write the head and leave the body empty.</h1>
 <ol start="4">
-<li>
-<p>After the closing <code>}</code> of <code>main()</code> write the factorial function that has just been defined, write the head and leave the body empty.</p>
- <details>
- <summary>Solution</summary>
-<pre><code class="language-c">int main(){
+<li>After the closing <code>}</code> of <code>main()</code> write the factorial function that has just been defined, write the head, and leave the body empty.</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>&lt;details&gt;
+&lt;summary&gt;Solution&lt;/summary&gt;
+
+```c
+int main(){
     ...
 }
 
 int factorial(int n){
 
 }
+```
+
+&lt;/details&gt;
 </code></pre>
- </details>
-</li>
+<ol start="5">
 <li>
 <p>Inside the factorial function write an if statement that checks if <code>n</code> is <code>0</code> or <code>1</code>, and if true, it returns <code>1</code>. Add a comment to the top of the if block that says <code>\\base case</code>.</p>
  <details>
@@ -265,11 +305,32 @@ int factorial(int n){
 </code></pre>
  </details>
 </li>
-<li>
-<p>Now add the recusive case which will be the <code>else</code> block. Write the <code>return</code> keyword after the inside the <code>else{}</code> block. Continuing on the same line multiply <code>n</code> to the result of the factorial function invocation (the recursion). The <code>factorial()</code>'s argument should be <code>n - 1</code></p>
- <details>
- <summary>Possible Solution</summary>
-<pre><code class="language-c">int factorial(int n) {
+</ol>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+6. Now add the recusive case which will be the <code>else</code> block. Write the <code>return</code> keyword after the inside the <code>else{}</code> block. Continuing on the same line multiply <code>n</code> to the result of the factorial function invocation (the recursion). The <code>factorial()</code>'s argument should be <code>n - 1</code></h1>
+<ol start="6">
+<li>Now add the recrusive case which will be the <code>else</code> block. Write the <code>return</code> keyword after the inside the <code>else{}</code> block. Continuing on the same line multiply <code>n</code> to the result of the factorial function invocation (the recursion). The <code>factorial()</code>'s argument should be <code>n - 1</code></li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>&lt;details&gt;
+&lt;summary&gt;Possible Solution&lt;/summary&gt;
+
+```c
+int factorial(int n) {
     // Base case
     if (n == 0 || n == 1) {
         return 1;
@@ -278,23 +339,46 @@ int factorial(int n){
         return n * factorial(n - 1);
     }
 }
+```
+
+&lt;/details&gt;
 </code></pre>
- </details>
-</li>
-<li>
-<p>Now revist <code>main()</code> and create a variable called <code>result</code> which is of the data type <code>int</code> which stores the result of the <code>factorial(5)</code> as part of it's declaration and initilaisation. On the next line print the variable <code>result</code> the prepened string <code>"Factorial: "</code></p>
- <details>
- <summary>Possible Solution</summary>
-<pre><code class="language-c">int main() {
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol start="7">
+<li>Now revist <code>main()</code> and create a variable called <code>result</code> which is of the data type <code>int</code> which stores the result of the <code>factorial(5)</code> as part of it's declaration and initilaisation. On the next line print the variable <code>result</code> the prepened string <code>"Factorial: "</code>
+=======
+Now revisit <code>main()</code> and create a variable called <code>result</code> which is of the data type <code>int</code> which stores the result of the <code>factorial(5)</code> as part of itws <code>declaration</code> and <code>initialisation</code>. On the next line print the variable <code>result</code> the prepended string <code>"Factorial: "</code></li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>&lt;details&gt;
+&lt;summary&gt;Possible Solution&lt;/summary&gt;
+
+```c
+int main() {
     // Example usage
     int result = factorial(5);
     printf("Factorial: %d\n", result);  // Output: 120
 
     return 0;
 }
+```
+&lt;/details&gt;
 </code></pre>
- </details>
-</li>
+<ol start="8">
 <li>
 <p>Run the program and you should see the following:</p>
  <div align=center>
@@ -307,14 +391,35 @@ int factorial(int n){
 </ol>
 <pre><code class="language-c">printf("%d x %d = %d\n",n, (n-1), n * (n - 1));
 </code></pre>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+10. Try printing and see what happens?</h1>
 <ol start="10">
-<li>
-<p>Try printing and see what happens?</p>
-<details>
-<summary>Output</summary>
-<p><img src="./figures/step3.png" alt="" /></p>
-<p>So why is this happening, the result is 120 but here it would appear that 2,880 = 20 x 12 x 6 x 2</p>
-<pre><code class="language-sql">Call: factorial(5)
+<li>Try printing and see what happens:</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>&lt;details&gt;
+&lt;summary&gt;Output&lt;/summary&gt;
+
+![](./figures/step3.png)
+
+So why is this happening, the result is 120 but here it would appear that 2,880 = 20 x 12 x 6 x 2
+
+```sql
+Call: factorial(5)
 |
 └── Print: 5 x 4 = 20
 └── Call: factorial(4)
@@ -333,12 +438,14 @@ int factorial(int n){
     └── Returned: 4 x 6 = 24
 └── Returned: 5 x 24 = 120
 Final Result: 120
+```
+
+This diagram shows the sequence of recursive calls and how each call contributes to the final result of 120. The **base case** is reached when *n=1*, and the recursion starts unwinding, multiplying the results as it goes back up the chain of calls. The final result is the product of all the values calculated during the recursion.
+
+The final result is still 120, but the print statements highlight the individual multiplicative steps in the computation
+
+&lt;/details&gt;&lt;p&gt;&lt;/p&gt;
 </code></pre>
-<p>This diagram shows the sequence of recursive calls and how each call contributes to the final result of 120. The <strong>base case</strong> is reached when <em>n=1</em>, and the recursion starts unwinding, multiplying the results as it goes back up the chain of calls. The final result is the product of all the values calculated during the recursion.</p>
-<p>The final result is still 120, but the print statements highlight the individual multiplicative steps in the computation</p>
-</details><p></p>
-</li>
-</ol>
 <details>
 <summary>Code without print statement</summary>
 <pre><code class="language-c">#include &lt;stdio.h&gt;
@@ -369,9 +476,28 @@ int factorial(int n) {
 <hr />
 <hr />
 <h2 id="task-2"><a class="header" href="#task-2">Task 2.</a></h2>
-<p>In this task you will create a recursive function to generate the <em>n</em>th term of the Fibonacci series.</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+In this task you will create a recursive function to generate the <em>n</em>th term of the Fibonacci series.</p>
 <div align=center>
-<p>0, 1, 1, 2, 3, 5 , 8, 13, 21, 34,…</p>
+<h1 id="0-1-1-2-3-5--8-13-21-34"><a class="header" href="#0-1-1-2-3-5--8-13-21-34">0, 1, 1, 2, 3, 5 , 8, 13, 21, 34,…</a></h1>
+<p>In this task, you will create a recursive function to generate the <em>n</em>th term of the Fibonacci series.</p>
+<div align=center>
+<p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34,…</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 </div>
 <p>Here’s how the sequence progresses:</p>
 <ul>
@@ -465,20 +591,75 @@ int factorial(int n)
 <p><img src="./figures/step4.png" alt="" /></p>
 </div>
 </li>
-<li>
-<p>Modifying the fibonacci function more, you could try and output each result per recursion. Add the following <code>printf</code> call in the <code>else</code> block above the <code>return</code> line:</p>
-</li>
 </ol>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+16. Modifying the fibonacci function more, you could try and output each result per recursion. Add the following <code>printf</code> call in the <code>else</code> block above the <code>return</code> line:</h1>
+<ol start="16">
+<li>Modifying the Fibonacci function more, you could try and output each result per recursion. Add the following <code>printf</code> call in the <code>else</code> block above the <code>return</code> line:</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <pre><code class="language-c">printf("(%d - 1) + (%d - 2) = %d\n", n, n, (n - 1) + (n - 2));
 </code></pre>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+10. Try running and see what happens?</h1>
 <ol start="10">
-<li>
-<p>Try running and see what happens?</p>
-<details>
-<summary>Output...</summary>
-<p><img src="./figures/step5.png" alt="" /></p>
-<p>Digrammitcally the program the recurison happens like this:</p>
-<pre><code class="language-sql">Call: fibonacci(5)
+<li>Try running and see what happens:</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>&lt;details&gt;
+&lt;summary&gt;Output...&lt;/summary&gt;
+
+![](./figures/step5.png)
+</code></pre>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Digrammitcally the program the recurison happens like this:</h1>
+<pre><code>Digrammitcally the program the recursion happens like this: 
+</code></pre>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>```sql
+Call: fibonacci(5)
 |
 └── Print: (5 - 1) + (5 - 2) = 5
 └── Call: fibonacci(4)
@@ -501,51 +682,38 @@ int factorial(int n)
     Returned: 3
 Returned: 5
 Final Result: Fibonacci number at position 5 is: 5
+```
+
+The textual representation above shows the recursive calls and their relationships for the Fibonacci sequence with `n = 5`. Let's break down the structure and explain each part:
+
+- **Call: fibonacci(5)**
+    - This is the initial call with \(n = 5\).
+    - It prints the sum of the two preceding Fibonacci numbers for the current level.
+
+- **Call: fibonacci(4)**
+    - This is a recursive call from the first level with \(n = 4\).
+    - It prints the sum of the two preceding Fibonacci numbers for the current level.
+
+- **Call: fibonacci(3)**
+    - This is a recursive call from the second level with \(n = 3\).
+    - It prints the sum of the two preceding Fibonacci numbers for the current level.
+
+- **Call: fibonacci(2)**
+    - This is a recursive call from the third level with \(n = 2\).
+    - It prints the sum of the two preceding Fibonacci numbers for the current level.
+
+- **Call: fibonacci(1) and fibonacci(0)**
+    - These are base cases, and they don't print the sum.
+    - They return 1 and 0, respectively.
+
+The diagram shows the hierarchy of recursive calls, where each node represents a call to the `fibonacci` function with a specific value of \(n\). The "Print" lines indicate where the sum is printed. The "Returned" lines indicate the value returned from a particular call.
+
+The final result is printed at the bottom as "Final Result: Fibonacci number at position 5 is: 5". This is the cumulative result obtained by adding the values returned from the recursive calls.
+
+This kind of diagram is useful for visualizing the flow of recursive calls and understanding how the function evaluates the Fibonacci sequence for a given input.
+
+&lt;/details&gt;&lt;p&gt;&lt;/p&gt;
 </code></pre>
-<p>The textual representation above shows the recursive calls and their relationships for the Fibonacci sequence with <code>n = 5</code>. Let's break down the structure and explain each part:</p>
-<ul>
-<li>
-<p><strong>Call: fibonacci(5)</strong></p>
-<ul>
-<li>This is the initial call with (n = 5).</li>
-<li>It prints the sum of the two preceding Fibonacci numbers for the current level.</li>
-</ul>
-</li>
-<li>
-<p><strong>Call: fibonacci(4)</strong></p>
-<ul>
-<li>This is a recursive call from the first level with (n = 4).</li>
-<li>It prints the sum of the two preceding Fibonacci numbers for the current level.</li>
-</ul>
-</li>
-<li>
-<p><strong>Call: fibonacci(3)</strong></p>
-<ul>
-<li>This is a recursive call from the second level with (n = 3).</li>
-<li>It prints the sum of the two preceding Fibonacci numbers for the current level.</li>
-</ul>
-</li>
-<li>
-<p><strong>Call: fibonacci(2)</strong></p>
-<ul>
-<li>This is a recursive call from the third level with (n = 2).</li>
-<li>It prints the sum of the two preceding Fibonacci numbers for the current level.</li>
-</ul>
-</li>
-<li>
-<p><strong>Call: fibonacci(1) and fibonacci(0)</strong></p>
-<ul>
-<li>These are base cases, and they don't print the sum.</li>
-<li>They return 1 and 0, respectively.</li>
-</ul>
-</li>
-</ul>
-<p>The diagram shows the hierarchy of recursive calls, where each node represents a call to the <code>fibonacci</code> function with a specific value of (n). The "Print" lines indicate where the sum is printed. The "Returned" lines indicate the value returned from a particular call.</p>
-<p>The final result is printed at the bottom as "Final Result: Fibonacci number at position 5 is: 5". This is the cumulative result obtained by adding the values returned from the recursive calls.</p>
-<p>This kind of diagram is useful for visualizing the flow of recursive calls and understanding how the function evaluates the Fibonacci sequence for a given input.</p>
-</details><p></p>
-</li>
-</ol>
 <hr />
 <hr />
 <details>

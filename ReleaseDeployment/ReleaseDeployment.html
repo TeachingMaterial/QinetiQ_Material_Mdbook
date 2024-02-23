@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Release Deployment - QinetiQ Material - University of Greenwich</title>
+        <title>Release Deployment - QinetiQ Material MdBook - University of Greenwich</title>
 
 
         <!-- Custom HTML head -->
@@ -142,13 +142,13 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">QinetiQ Material - University of Greenwich</h1>
+                    <h1 class="menu-title">QinetiQ Material MdBook - University of Greenwich</h1>
 
                     <div class="right-buttons">
-                        <a href="https://github.com/TeachingMaterial/QinetiQMaterial" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/TeachingMaterial/QinetiQMaterial/edit/master/content/ReleaseDeployment/ReleaseDeployment.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook/edit/master/content/ReleaseDeployment/ReleaseDeployment.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -191,13 +191,33 @@ deployed all at once.</p>
 <li><a href="#develop-multiple-features-in-parallel">Develop multiple features in parallel</a></li>
 <li><a href="#create-and-deploy-a-release">Create and deploy a release</a></li>
 <li><a href="#change-in-plan-pull-a-feature-from-a-release">Change in plan, pull a feature from a release</a></li>
-<li><a href="#supporting-old-releases">Supporting old releases</a></li>
-<li><a href="#production-hot-fix">Production hot fix</a></li>
+<li><a href="#supporting-old-releases">Supporting old releases</a>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</li>
+<li><a href="#production-hot-fix">Production hot fix</a>
+=======</li>
+<li><a href="#production-hot-fix">Production Hot Fix</a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ul>
 <li><a href="#migrate-a-legacy-project">Migrate a legacy project</a></li>
-</ul>
-</li>
 <li><a href="#scenarios">Scenarios</a>
 <ul>
 <li><a href="#deploying-an-adaptivejsmobifyjs-bundle-to-production">Deploying an Adaptive.js/Mobify.js Bundle to Production</a></li>
@@ -219,16 +239,34 @@ deployed all at once.</p>
 <h3 id="develop-a-new-feature"><a class="header" href="#develop-a-new-feature">Develop a new feature</a></h3>
 <p><img src="./figures/feature-branch.png" alt="Feature branch" /></p>
 <ol>
-<li>
-<p>Make sure your <code>develop</code> branch is up-to-date</p>
-</li>
-<li>
-<p>Create a feature branch based off of <code>develop</code></p>
+<li>Make sure your <code>develop</code> branch is up-to-date</li>
+</ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
+<li>Create a feature branch based off of <code>develop</code>
+=======</li>
+<li>Create a feature branch based on `develop``</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <pre><code>$ git checkout develop
 $ git checkout -b MYTEAM-123-new-documentation
 $ git push --set-upstream MYTEAM-123-new-documentation
 </code></pre>
-</li>
+<ol>
 <li>
 <p>Develop the code for the new feature and commit. Push your changes often. This
 allows others to see your changes and suggest improvements/changes as well as
@@ -297,13 +335,42 @@ checklist. It will vary across projects, but you can refer to the Astro <a href=
 for an example.</li>
 </ul>
 </li>
+</ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
 <li>
 <p>At some point in the checklist you will merge the release branch into <code>master</code>.
 You can do this by using the "Merge pull request" button on the release PR.</p>
 </li>
 <li>
 <p>Now you are ready to create the actual release. Navigate to the project page
-on Github and draft a new release with the following settings:</p>
+on Github and draft a new release with the following settings:
+=======</p>
+</li>
+<li>
+<p>At some point in the checklist, you will merge the release branch into <code>master</code>.
+You can do this by using the "Merge pull request" button on the release PR.</p>
+</li>
+<li>
+<p>Now you are ready to create the actual release. Navigate to the project page
+on GitHub and draft a new release with the following settings:</p>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <ul>
 <li>Tag version: <code>vX.Y.Z</code></li>
 <li>Target: <code>master</code></li>
@@ -311,7 +378,7 @@ on Github and draft a new release with the following settings:</p>
 <li>Description: Include a high-level list of things changed in this release.
 Click <code>Publish release</code>.</li>
 </ul>
-</li>
+<ol>
 <li>
 <p>Merge the <code>release-vX.Y.Z</code> into <code>develop</code>.</p>
 <pre><code>$ git checkout develop
@@ -323,17 +390,54 @@ $ git push
 <p>Finish off the tasks in the release checklist. Once everything is done, close
 the release PR.</p>
 </li>
-<li>
-<p>Delete the release branch on Github.</p>
-</li>
 </ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
+<li>Delete the release branch on Github.
+=======</li>
+<li>Delete the release branch on GitHub.</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <h3 id="change-in-plan-pull-a-feature-from-a-release"><a class="header" href="#change-in-plan-pull-a-feature-from-a-release">Change in plan, pull a feature from a release</a></h3>
 <p><strong>TBD: Discuss</strong>
 Mike N: That probably means recreating the release branch, unless we have short-lived release branches</p>
 <h3 id="supporting-old-releases"><a class="header" href="#supporting-old-releases">Supporting old releases</a></h3>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <p>In a release based project old releases can often need some maintenance. Critical bug fixes and strategic feature requests need to be supported on old releases. Old releases often become incompatible with the most recent versions of projects.</p>
 <p>In order to support old release versions gitflow has introduced the concept of support branches. Support branches are long living branches created to support major or minor versions of the project. Support branches do not get merged back into <code>master</code> or <code>develop</code> (this would cause major merge issues which are time consuming and error prone if attempted). Instead commits can be cherry picked from the support branch back into <code>develop</code>.</p>
-<p>Support branches can be thought of as the <code>master</code> branch for old releases. Support branches for major releases should be named as <code>support-v&lt;major&gt;.x</code>. Support branches for minor releases should be named as <code>support-v&lt;major&gt;.&lt;minor&gt;.x</code>.</p>
+<h1 id="support-branches-can-be-thought-of-as-the-master-branch-for-old-releases-support-branches-for-major-releases-should-be-named-as-support-vmajorx-support-branches-for-minor-releases-should-be-named-as-support-vmajorminorx"><a class="header" href="#support-branches-can-be-thought-of-as-the-master-branch-for-old-releases-support-branches-for-major-releases-should-be-named-as-support-vmajorx-support-branches-for-minor-releases-should-be-named-as-support-vmajorminorx">Support branches can be thought of as the <code>master</code> branch for old releases. Support branches for major releases should be named as <code>support-v&lt;major&gt;.x</code>. Support branches for minor releases should be named as <code>support-v&lt;major&gt;.&lt;minor&gt;.x</code>.</a></h1>
+<p>In a release-based project old releases can often need some maintenance. Critical bug fixes and strategic feature requests need to be supported on old releases. Old releases often become incompatible with the most recent versions of projects.
+To support old release versions gitflow has introduced the concept of support branches. Support branches are long-living branches created to support major or minor versions of the project. Support branches do not get merged back into <code>master</code> or <code>develop</code> (this would cause major merge issues which are time-consuming and error-prone if attempted). Instead commits can be cherry-picked from the support branch back into <code>develop</code>.</p>
+<p>Support branches can be thought of as the <code>master</code> branch for old releases. Support branches for major releases should be named <code>support-v&lt;major&gt;.x</code>. Support branches for minor releases should be named as <code>support-v&lt;major&gt;.&lt;minor&gt;.x</code>.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <p>Here is an example of creating a support branch for v1.0 assuming v2.0 of the project has already been released.</p>
 <ol>
 <li>
@@ -352,6 +456,9 @@ git checkout -b release-v1.0.1
 <li>
 <p>Make changes in the <code>release-v1.0.1</code>. Multiple PRs can be merged into this branch if several changes are necessary.</p>
 </li>
+</ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
 <li>
 <p>As PRs are merged into the <code>release-v1.0.1</code> branch create associated PRs that cherry pick the changes back into <code>develop</code>. Ensure that these changes are desired by the team going forward and that they are compatible with the current state of the <code>develop</code> branch.</p>
 </li>
@@ -367,19 +474,71 @@ git checkout -b release-v1.0.1
 </ol>
 <p><em>Pro-tip</em>: Try to maintain as few support branches as possible. These branches are expensive to maintain since you will need to cherry pick applicable bug fixes into each support branch seperately.</p>
 <h3 id="production-hot-fix"><a class="header" href="#production-hot-fix">Production hot fix</a></h3>
-<p>A production hotfix is very similar to a full-scale release except that you do
+<h1>A production hotfix is very similar to a full-scale release except that you do
 your work in a branch taken directly off of <code>master</code>. Hotfixes are useful in cases
-where you want to patch a bug in a released version, but <code>develop</code> has unreleased
-code in it already.</p>
-<p><strong>TBD: Insert diagram</strong></p>
+where you want to patch a bug in a released version, but <code>develop</code> has unreleased</h1>
 <ol>
 <li>
-<p>Create a hot fix branch based off of <code>master</code>.</p>
+<p>As PRs are merged into the <code>release-v1.0.1</code> branch create associated PRs that cherry-pick the changes back into <code>develop</code>. Ensure that these changes are desired by the team going forward and that they are compatible with the current state of the <code>develop</code> branch.</p>
+</li>
+<li>
+<p>Create release PR to merge <code>release-v1.0.1</code> into <code>support-v1.x</code>.</p>
+</li>
+<li>
+<p>Follow the standard release process treating <code>support-v1.x</code> as the <code>master</code> branch. As per the standard release process, <code>release-v1.0.1</code> will get deleted and <code>support-v1.x</code> will remain in repo indefinitely.</p>
+</li>
+<li>
+<p>Mark <code>support-v1.x</code> as a protected branch in GitHub so that it does not get accidentally deleted.</p>
+</li>
+</ol>
+<p><em>Pro-tip</em>: Try to maintain as few support branches as possible. These branches are expensive to maintain since you will need to cherry-pick applicable bug fixes into each support branch separately.</p>
+<h3 id="production-hot-fix-1"><a class="header" href="#production-hot-fix-1">Production Hot Fix</a></h3>
+<p>A production hotfix is very similar to a full-scale release except that you do
+your work in a branch taken directly off of <code>master</code>. Hotfixes are useful in cases
+where you want to patch a bug in a released version but <code>develop</code> has unreleased</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev
+code in it already.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>TBD: Insert diagram</strong></p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
+<li>Create a hot fix branch based off of <code>master</code>.
+=======</li>
+<li>Create a hot-fix branch based on the <code>master</code>.</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <pre><code>$ git checkout master
 $ git checkout -b hotfix-documentation-broken-links
 $ git push --set-upstream origin hotfix-documentation-broken-links
 </code></pre>
-</li>
+<ol>
 <li>
 <p>Add a test case to validate the bug, fix the bug, and commit.</p>
 <pre><code>... add test, fix bug, verify
@@ -398,6 +557,9 @@ Paste your release checklist into the PR and work through the PR to get the
 hotfix into production.</li>
 </ul>
 </li>
+</ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
 <li>
 <p>At some point in the checklist you will merge the hotfix branch into <code>master</code>.
 You can do this by using the "Merge pull request" button on the release PR.</p>
@@ -405,15 +567,39 @@ You can do this by using the "Merge pull request" button on the release PR.</p>
 <li>
 <p>Now that the hotfix code is in <code>master</code> you are ready to create the actual
 release. Navigate to the project page on Github and draft a new release with
+=======</p>
+</li>
+<li>
+<p>At some point in the checklist, you will merge the hotfix branch into <code>master</code>.
+You can do this by using the "Merge pull request" button on the release PR.</p>
+</li>
+<li>
+<p>Now that the hotfix code is in <code>master</code> you are ready to create the actual
+release. Navigate to the project page on GitHub and draft a new release with</p>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev
 the following settings:</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <ul>
 <li>Tag version: <code>vX.Y.Z</code></li>
 <li>Target: <code>master</code></li>
 <li>Release title: <code>Release vX.Y.Z (hotfix)</code></li>
 <li>Description: Include a high-level list of things changed in this release.</li>
 </ul>
-</li>
-</ol>
 <p>Click <code>Publish release</code>.</p>
 <p><em>Note: Hotfix releases <em>are</em> actual releases. You should bump at least the
 patch part of the version when releasing a hotfix and so even hotfixes go
@@ -471,19 +657,44 @@ Reviewers: Customer
  - [ ] Clean Up Repo
 </code></pre>
 </li>
+</ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ol>
 <li>
 <p>Once the customer has approved the bundle. The bundle is published to production and post launch tests occur. Once all tests have passed, the pull request is merged into <code>master</code>.</p>
 </li>
 <li>
-<p>Finish the <em>Github release workflow</em> as described above and ensure that these specific changes are added to the <em>release notes</em> draft of the <em>Github release</em>:</p>
+<p>Finish the <em>Github release workflow</em> as described above and ensure that these specific changes are added to the <em>release notes</em> draft of the <em>Github release</em>:
+=======</p>
+</li>
+<li>
+<p>Once the customer has approved the bundle. The bundle is published to production and post-launch tests occur. Once all tests have passed, the pull request is merged into <code>master</code>.</p>
+</li>
+<li>
+<p>Finish the <em>Github release workflow</em> as described above and ensure that these specific changes are added to the <em>release notes</em> draft of the <em>GitHub release</em>:</p>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <ul>
 <li>Release title: <code>Release vX.Y.Z - Bundle &lt;number&gt;</code></li>
 <li>Description: This should also include a link to a confluence JIRA report page that lists all issues in the release.</li>
 </ul>
 <p>Click <code>Publish release</code>.</p>
 <p><strong>NOTE: the release tag will be 1 commit ahead of the bundle commit</strong></p>
-</li>
-</ol>
 
                     </main>
 

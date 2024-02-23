@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Streams - QinetiQ Material - University of Greenwich</title>
+        <title>Streams - QinetiQ Material MdBook - University of Greenwich</title>
 
 
         <!-- Custom HTML head -->
@@ -142,13 +142,13 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">QinetiQ Material - University of Greenwich</h1>
+                    <h1 class="menu-title">QinetiQ Material MdBook - University of Greenwich</h1>
 
                     <div class="right-buttons">
-                        <a href="https://github.com/TeachingMaterial/QinetiQMaterial" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                        <a href="https://github.com/TeachingMaterial/QinetiQMaterial/edit/master/content/Streams/Streams.md" title="Suggest an edit" aria-label="Suggest an edit">
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook/edit/master/content/Streams/Streams.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
 
@@ -178,7 +178,24 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="lab-8-streams"><a class="header" href="#lab-8-streams">Lab 8: Streams</a></h1>
-<p>You have been using the <code>stdio.h</code> for nearly every lab, and will use it for nearly every program you will ever create in C.</p>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+You have been using the <code>stdio.h</code> for nearly every lab, and will use it for nearly every program you will ever create in C.</h1>
+<p>You have been using the <code>stdio.h</code> for nearly every lab and will use it for nearly every program you will ever create in C.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <p><strong>St</strong>andar<strong>d</strong> <strong>I</strong>nput and <strong>O</strong>utput enables the program to take inputs and produce outputs. These two categories are broken numerically as:</p>
 <ul>
 <li>Standard <strong>In</strong> is numerically defined as <code>0</code></li>
@@ -192,9 +209,27 @@
 <tr><td><code>ungetc()</code></td><td>Unget character</td></tr>
 </tbody></table>
 </div>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <ul>
-<li>Standard <strong>Out</strong> is numerically dedined as <code>1</code></li>
+<li>Standard <strong>Out</strong> is numerically dedined as <code>1</code>
+=======</li>
+<li>Standard <strong>Out</strong> is numerically deined as <code>1</code></li>
 </ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <div class="table-wrapper"><table><thead><tr><th>Function</th><th>Description</th></tr></thead><tbody>
 <tr><td><code>putc()</code></td><td>Put character</td></tr>
 <tr><td><code>putchar()</code></td><td>Put character</td></tr>
@@ -214,12 +249,30 @@
 <h2 id="task-1-starting-out"><a class="header" href="#task-1-starting-out">Task 1: Starting out...</a></h2>
 <p>In this program you are going to:</p>
 <ul>
-<li>
-<p>prompt the user to enter a number.</p>
-</li>
-<li>
-<p>read the user input using <code>scanf()</code> and checks if the input was successfully read. If an error occurs, <code>perror()</code> is used to print an error message, and the program exits with an error code.</p>
-</li>
+<li>prompt the user to enter a number.</li>
+</ul>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<ul>
+<li>read the user input using <code>scanf()</code> and checks if the input was successfully read. If an error occurs, <code>perror()</code> is used to print an error message, and the program exits with an error code.
+=======</li>
+<li>read the user input using <code>scanf()</code> and check if the input was successfully read. If an error occurs, <code>perror()</code> is used to print an error message, and the program exits with an error code.</li>
+</ul>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ul>
 <li>
 <p>If the input is successfully read, a simple calculation is performed (squaring the input).</p>
 </li>
@@ -241,14 +294,37 @@
 <p>Next using standard in's <code>scanf()</code> read in the users input use the format specifier <code>%d</code> and save it to <code>&amp;number</code></p>
 </li>
 <li>
-<p>Add some conditional checking to compare the <code>number</code> to the value <code>2</code>, where the comparison is <em><code>number</code> <strong>does not equal</strong> <code>2</code></em>.</p>
+<p>Add some conditional checking to compare the <code>number</code> to the value <code>2</code>, where the comparison is <em><code>number</code> <strong>does not equal</strong> <code>2</code></em>.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 </li>
 <li>
 <p>Inside the conditonal block use the <code>perror</code> function to with the string <code>"Error reading input"</code>, on the next line use <code>return 1</code> to indicate an error using the exit code <code>1</code>.</p>
 </li>
 <li>
-<p>Outside of the conditonal block  multiply the <code>number</code> by itself and assign the result to <code>result</code>,</p>
+<p>Outside of the conditonal block  multiply the <code>number</code> by itself and assign the result to <code>result</code>,
+=======
+Inside the conditional block use the <code>perror</code> function to with the string <code>"Error reading input"</code>, on the next line use <code>return 1</code> to indicate an error using the exit code <code>1</code>.</p>
 </li>
+<li>
+<p>Outside of the conditional block  multiply the <code>number</code> by itself and assign the result to <code>result</code>,</p>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol start="8">
 <li>
 <p>Finally, print the result using  <code>printf("The square of %d is: %d\n", number, result);</code><p></p></p>
  <details>
@@ -285,15 +361,51 @@ int main() {
 </code></pre>
  </details>
 </li>
-<li>
-<p>Run the code and when prompted enter the any number that is <strong>not</strong> <code>2</code>.</p>
- <details>
- <summary>Output...</summary>
-<ul>
-<li>Notice how the terminal has rendered the error message, this is because error, <code>2</code> stream is different to standard out, <code>1</code>, stream</li>
-</ul>
- </details>
-</li>
+</ol>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+9. Run the code and when prompted enter the any number that is <strong>not</strong> <code>2</code>.</h1>
+<ol start="9">
+<li>Run the code and when prompted enter any number that is <strong>not</strong> <code>2</code>.</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>&lt;details&gt;
+&lt;summary&gt;Output...&lt;/summary&gt;
+</code></pre>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+- Notice how the terminal has rendered the error message, this is because error, <code>2</code> stream is different to standard out, <code>1</code>, stream</h1>
+<pre><code>- Notice how the terminal has rendered the error message, this is because error, `2` stream is different to the standard out, `1`, stream
+</code></pre>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev
+</details></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol start="10">
 <li>
 <p>Run a second time and then enter the value <code>2</code></p>
 <details>
@@ -304,10 +416,28 @@ int main() {
 <hr />
 <h2 id="task-2-read-and-write-a-file"><a class="header" href="#task-2-read-and-write-a-file">Task 2: Read and Write a File</a></h2>
 <p>The program you will write assumes that there is an input file named <code>input.txt</code> that stores two integers. The program will then create an output file named <code>output.txt</code> with the multiplication result of those two numbers. Error handling is incorporated using <code>perror()</code> for file-related errors.</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <ol>
-<li>
-<p>Create a new file and places in the resources folder of the solution view, call it <code>input.txt</code>, inside the file input <strong>two</strong> numbers seperated by <strong>space</strong> that range from <code>0</code> <strong>to</strong> <code>50000</code>, save the file.</p>
-</li>
+<li>Create a new file and places in the resources folder of the solution view, call it <code>input.txt</code>, inside the file input <strong>two</strong> numbers seperated by <strong>space</strong> that range from <code>0</code> <strong>to</strong> <code>50000</code>, save the file.
+=======</li>
+<li>Create a new file and place it in the resources folder of the solution view, call it <code>input.txt</code>, inside the file input <strong>two</strong> numbers separated by <strong>space</strong> that range from <code>0</code> <strong>to</strong> <code>50000</code>, and save the file.</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol start="2">
 <li>
 <p>Now modify <code>main()</code>, by placing using the <code> FILE *inputFile, *outputFile;</code> at the top of <code>main()</code>.</p>
 <blockquote>
@@ -328,16 +458,54 @@ int main() {
 </blockquote>
 </blockquote>
 </li>
-<li>
-<p>On the next line define three integer variables called, <code>numOne</code>, <code>numTwo</code> and <code>result</code>:</p>
-<details>
-<summary>Code...</summary>
-<pre><code class="language-c">int num1, num2, result;
+</ol>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+3. On the next line define three integer variables called, <code>numOne</code>, <code>numTwo</code> and <code>result</code>:</h1>
+<ol start="3">
+<li>On the next line define three integer variables called, <code>numOne</code>, <code>numTwo</code>, and, <code>result</code>:</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+   <details>
+   <summary>Code...</summary>
+<pre><code>```c
+int num1, num2, result;
+```
 </code></pre>
-</details>
-</li>
-<li>
-<p>Create two newlines and the second one you need to reproduce the follwoing:</p>
+   </details>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+4. Create two newlines and the second one you need to reproduce the follwoing:</h1>
+<ol start="4">
+<li>Create two newlines and on the second one you need to reproduce the following:</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <pre><code class="language-c"> // Open input file for reading
  inputFile = fopen("input.txt", "r");
  if (inputFile == NULL) {
@@ -345,12 +513,22 @@ int main() {
      return 1; // Exit with an error code
  }
 </code></pre>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+- Here we are using <code>fopen</code> to open the <code>"input.txt"</code> with in read mode <code>"r"</code></p>
+<pre><code>- A check is made to see if the `inputFile` has any data, does the file exist, this is done with a `NULL` check.
+
+- If `NULL`, then the `perror` is invoked and outputs `"Error opening input file"` to standard error, and close the application with `return 1,` to indicate an error using an exit code. 
+</code></pre>
+<ol start="5">
+<li>
+<p>If inputFile is not <code>NULL</code> then the following code would excute, input the following:
+=======</p>
 <ul>
 <li>
-<p>Here we are using <code>fopen</code> to open the <code>"input.txt"</code> with in read mode <code>"r"</code></p>
+<p>Here we are using <code>fopen</code> to open the <code>"input.txt"</code> within read mode <code>"r"</code></p>
 </li>
 <li>
-<p>A check is made to see if the <code>inputFile</code> has any data, does the file exist, this is done with a <code>NULL</code> check.</p>
+<p>A check is made to see if the <code>inputFile</code> has any data and the if file exists, this is done with a <code>NULL</code> check.</p>
 </li>
 <li>
 <p>If <code>NULL</code>, then the <code>perror</code> is invoked and outputs <code>"Error opening input file"</code> to standard error, and close the application with <code>return 1,</code> to indicate an error using an exit code.</p>
@@ -358,7 +536,24 @@ int main() {
 </ul>
 </li>
 <li>
-<p>If inputFile is not <code>NULL</code> then the following code would excute, input the following:</p>
+<p>If <code>inputFile</code> is not <code>NULL</code> then the following code will execute, input the following:</p>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 <pre><code class="language-c">// Read two integers from the input file
 if (fscanf(inputFile, "%d %d", &amp;numOne, &amp;numTwo) != 2) {
      // Handle input error using perror()
@@ -367,6 +562,7 @@ if (fscanf(inputFile, "%d %d", &amp;numOne, &amp;numTwo) != 2) {
      return 1; // Exit with an error code
  }
 </code></pre>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <ul>
 <li>
 <p><code>fscanf</code> is for reading files what <code>scanf</code> is for reading from terminal input.</p>
@@ -378,10 +574,42 @@ if (fscanf(inputFile, "%d %d", &amp;numOne, &amp;numTwo) != 2) {
 <p><code>fclose</code> is invoked because the file was opened, and needs to be closed. This protects the file from curruption when the program closes with <code>return 1</code></p>
 </li>
 </ul>
+<ol start="6">
+<li>
+<p>We should also close the file when successfully read, do this by reproducing the <code>fclose</code> code on a new line outside of the closing brace of the <code>if(...){...</code>}
+=======</p>
+<ul>
+<li>
+<p><code>fscanf</code> is for reading files and <code>scanf</code> is for reading from terminal input.</p>
 </li>
 <li>
-<p>We should also close the file when successfully read, do this by reproducing the <code>fclose</code> code on a new line outside of the closing brace of the <code>if(...){...</code>}</p>
+<p><code>fscanf</code> returns the number of successfully read items. In this case, it should return <code>2</code> if it successfully reads two integers from the file. The <code>!= 2</code> checks if the return value is <strong>not</strong> equal to 2, indicating that the expected number of items was <strong>not</strong> successfully read.</p>
 </li>
+<li>
+<p><code>fclose</code> is invoked because the file was opened, and needs to be closed. This protects the file from corruption when the program closes with <code>return 1</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>We should also close the file when successfully read, do this by reproducing the <code>fclose</code> code on a new line outside of the closing brace of the <code>if(...){...}</code></p>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol start="7">
 <li>
 <p>The calculation can now be performed, multiply <code>numOne</code> by <code>numTwo</code> and store in <code>result</code></p>
  <details>
@@ -393,27 +621,60 @@ result = numOne * numTwo;
 </code></pre>
  </details>
 </li>
-<li>
-<p>In a similar fashion to step 4 we need to write to a new file, reproduce the following:</p>
-<pre><code class="language-c">// Open output file for writing
+</ol>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+8. In a similar fashion to step 4 we need to write to a new file, reproduce the following:</h1>
+<ol start="8">
+<li>Similarly to step 4 we need to write a new file, and reproduce the following:</li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>```c
+// Open output file for writing
 outputFile = fopen("output.txt", "w");
 if (outputFile == NULL) {
     perror("Error opening output file");
     return 1; // Exit with an error code
 }
+```
+
+- `fopen` opens the `"output.txt"` in write mode `"w"`
 </code></pre>
-<ul>
-<li>
-<p><code>fopen</code> opens the <code>"output.txt"</code> in write mode <code>"w"</code></p>
-</li>
-<li>
-<p>A check is made to see if the <code>outputFile</code> has any data, does the file exist, this is done with a <code>NULL</code> check.</p>
-</li>
-<li>
-<p>If <code>NULL</code>, then the <code>perror</code> is invoked and outputs <code>"Error opening output file"</code> to standard error, and close the application with <code>return 1</code>, to indicate an error using an exit code.</p>
-</li>
-</ul>
-</li>
+<h1>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+- A check is made to see if the <code>outputFile</code> has any data, does the file exist, this is done with a <code>NULL</code> check.</h1>
+<pre><code>- A check is made to see if the `outputFile` has any data, and does the file exists, this is done with a `NULL` check.
+</code></pre>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>- If `NULL`, then the `perror` is invoked and outputs `"Error opening output file"` to standard error, and close the application with `return 1`, to indicate an error using an exit code. 
+</code></pre>
+<ol start="9">
 <li>
 <p>Again, repeating the structure of step 5, we can write to the file the <code>result</code> variable. Reproduce the following:</p>
 <pre><code class="language-c">// Write the result to the output file
@@ -425,11 +686,21 @@ if (fprintf(outputFile, "Multiplication result: %d\n", result) &lt; 0) {
 }
 </code></pre>
 <ul>
-<li>
-<p><code>fprintf</code> is for writing a formatted output to a file. It is similar to <code>printf</code>, but it writes to a file stream (<code>FILE*</code>).</p>
+<li><code>fprintf</code> is for writing a formatted output to a file. It is similar to <code>printf</code>, but it writes to a file stream (<code>FILE*</code>).</li>
+</ul>
 </li>
+</ol>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+- <code>&lt; 0</code> is a comparison that checks if the return value of fprintf is <strong>less than</strong> 0. <code>fprintf</code> returns the number of characters successfully written. If the return value is less than 0, it indicates an error occurred during writing.</p>
+<pre><code>- Again you see `perror()` for standard error and the addition of `fclose()` to close the file.
+</code></pre>
+<ol start="10">
 <li>
-<p><code>&lt; 0</code> is a comparison that checks if the return value of fprintf is <strong>less than</strong> 0. <code>fprintf</code> returns the number of characters successfully written. If the return value is less than 0, it indicates an error occurred during writing.</p>
+<p>On success the file needs to be close so after the <code>if(..){..}</code> add <code>fclose("outputFile)</code> and on a new line <code>printf("Operation completed successfully.\n");</code>
+=======</p>
+<ul>
+<li>
+<p><code>&lt; 0</code> is a comparison that checks if the return value of <code>fprintf</code> is <strong>less than</strong> 0. <code>fprintf</code> returns the number of characters successfully written. If the return value is less than 0, it indicates an error occurred during writing.</p>
 </li>
 <li>
 <p>Again you see <code>perror()</code> for standard error and the addition of <code>fclose()</code> to close the file.</p>
@@ -437,8 +708,25 @@ if (fprintf(outputFile, "Multiplication result: %d\n", result) &lt; 0) {
 </ul>
 </li>
 <li>
-<p>On success the file needs to be close so after the <code>if(..){..}</code> add <code>fclose("outputFile)</code> and on a new line <code>printf("Operation completed successfully.\n");</code></p>
+<p>On success, the file needs to be closed so after the <code>if(..){..}</code> add <code>fclose("outputFile)</code> and on a new line <code>printf("Operation completed successfully.\n");</code></p>
 </li>
+</ol>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>dev</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol start="11">
 <li>
 <p>Run the code and you should see the following outputs:</p>
 </li>
