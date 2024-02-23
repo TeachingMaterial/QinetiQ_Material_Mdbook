@@ -6,6 +6,7 @@ This mdBook provides example code and guides on C and Git in the form of labs/wo
 <table>
 <tr>
 <td>
+
 The mdBook is mobile and tablet friendly too:
 - [https://teachingmaterial.github.io/QinetiQ_Material_Mdbook/](https://teachingmaterial.github.io/QinetiQ_Material_Mdbook/Introduction.html)
 - Or scan the QR code on the right:
