@@ -1,12 +1,8 @@
 # Lab 8: Streams
 
-<<<<<<< HEAD
-You have been using the `stdio.h` for nearly every lab, and will use it for nearly every program you will ever create in C.
-=======
 You have been using the `stdio.h` for nearly every lab and will use it for nearly every program you will ever create in C.
->>>>>>> dev
 
-**St**andar**d** **I**nput and **O**utput enables the program to take inputs and produce outputs. These two categories are broken numerically as: 
+**St**andar**d** **I**nput and **O**utput enabled the program to take inputs and produce outputs. These two categories are broken numerically as: 
     
 - Standard **In** is numerically defined as `0`
 
@@ -20,11 +16,7 @@ You have been using the `stdio.h` for nearly every lab and will use it for nearl
 | `ungetc()`  | Unget character   |
 
 
-<<<<<<< HEAD
-- Standard **Out** is numerically dedined as `1`
-=======
-- Standard **Out** is numerically deined as `1`
->>>>>>> dev
+- Standard **Out** is numerically defined as `1`
 
 | Function  | Description       |
 |-----------|-------------------|
@@ -49,11 +41,7 @@ In this program you are going to:
 
 - prompt the user to enter a number.
 
-<<<<<<< HEAD
-- read the user input using `scanf()` and checks if the input was successfully read. If an error occurs, `perror()` is used to print an error message, and the program exits with an error code. 
-=======
 - read the user input using `scanf()` and check if the input was successfully read. If an error occurs, `perror()` is used to print an error message, and the program exits with an error code. 
->>>>>>> dev
 
 - If the input is successfully read, a simple calculation is performed (squaring the input).
 
@@ -69,16 +57,9 @@ In this program you are going to:
 4. Next using standard in's `scanf()` read in the users input use the format specifier `%d` and save it to `&number` 
 
 5.  Add some conditional checking to compare the `number` to the value `2`, where the comparison is *`number` **does not equal** `2`*.
-<<<<<<< HEAD
-
-6. Inside the conditonal block use the `perror` function to with the string `"Error reading input"`, on the next line use `return 1` to indicate an error using the exit code `1`.
-
-7. Outside of the conditonal block  multiply the `number` by itself and assign the result to `result`, 
-=======
 Inside the conditional block use the `perror` function to with the string `"Error reading input"`, on the next line use `return 1` to indicate an error using the exit code `1`.
 
 7. Outside of the conditional block  multiply the `number` by itself and assign the result to `result`, 
->>>>>>> dev
 
 8. Finally, print the result using  `printf("The square of %d is: %d\n", number, result);`<p></p>
    
@@ -119,21 +100,13 @@ Inside the conditional block use the `perror` function to with the string `"Erro
 
     </details>
 
-<<<<<<< HEAD
-9. Run the code and when prompted enter the any number that is **not** `2`. 
-=======
 9. Run the code and when prompted enter any number that is **not** `2`. 
->>>>>>> dev
 
     <details>
     <summary>Output...</summary>
 
 
-<<<<<<< HEAD
-    - Notice how the terminal has rendered the error message, this is because error, `2` stream is different to standard out, `1`, stream
-=======
     - Notice how the terminal has rendered the error message, this is because error, `2` stream is different to the standard out, `1`, stream
->>>>>>> dev
     </details>
 
 
@@ -151,11 +124,7 @@ Inside the conditional block use the `perror` function to with the string `"Erro
 
 The program you will write assumes that there is an input file named `input.txt` that stores two integers. The program will then create an output file named `output.txt` with the multiplication result of those two numbers. Error handling is incorporated using `perror()` for file-related errors.
 
-<<<<<<< HEAD
-1. Create a new file and places in the resources folder of the solution view, call it `input.txt`, inside the file input **two** numbers seperated by **space** that range from `0` **to** `50000`, save the file.
-=======
 1. Create a new file and place it in the resources folder of the solution view, call it `input.txt`, inside the file input **two** numbers separated by **space** that range from `0` **to** `50000`, and save the file.
->>>>>>> dev
 
 2. Now modify `main()`, by placing using the ` FILE *inputFile, *outputFile;` at the top of `main()`. 
     
@@ -170,11 +139,7 @@ The program you will write assumes that there is an input file named `input.txt`
     >>
     >> - `FILE` is essentially a structure that holds information about an open file, including its **current position**, **status**, and **other details**. When you open a file using functions like `fopen()`, it returns a pointer,`*`, to a `FILE` structure that you use for subsequent file operations.
 
-<<<<<<< HEAD
-3. On the next line define three integer variables called, `numOne`, `numTwo` and `result`: 
-=======
 3. On the next line define three integer variables called, `numOne`, `numTwo`, and, `result`: 
->>>>>>> dev
    
    <details>
    <summary>Code...</summary>
@@ -185,11 +150,7 @@ The program you will write assumes that there is an input file named `input.txt`
    
    </details>
 
-<<<<<<< HEAD
-4. Create two newlines and the second one you need to reproduce the follwoing: 
-=======
 4. Create two newlines and on the second one you need to reproduce the following: 
->>>>>>> dev
    ```c
     // Open input file for reading
     inputFile = fopen("input.txt", "r");
@@ -199,15 +160,6 @@ The program you will write assumes that there is an input file named `input.txt`
     }
    ```
 
-<<<<<<< HEAD
-    - Here we are using `fopen` to open the `"input.txt"` with in read mode `"r"`
-
-    - A check is made to see if the `inputFile` has any data, does the file exist, this is done with a `NULL` check.
-
-    - If `NULL`, then the `perror` is invoked and outputs `"Error opening input file"` to standard error, and close the application with `return 1,` to indicate an error using an exit code. 
-
-5. If inputFile is not `NULL` then the following code would excute, input the following: 
-=======
     - Here we are using `fopen` to open the `"input.txt"` within read mode `"r"`
 
     - A check is made to see if the `inputFile` has any data and the if file exists, this is done with a `NULL` check.
@@ -215,7 +167,6 @@ The program you will write assumes that there is an input file named `input.txt`
     - If `NULL`, then the `perror` is invoked and outputs `"Error opening input file"` to standard error, and close the application with `return 1,` to indicate an error using an exit code. 
 
 5. If `inputFile` is not `NULL` then the following code will execute, input the following:
->>>>>>> dev
 
    ```c
    // Read two integers from the input file
@@ -227,15 +178,6 @@ The program you will write assumes that there is an input file named `input.txt`
     }
    ```
 
-<<<<<<< HEAD
-   - `fscanf` is for reading files what `scanf` is for reading from terminal input.
-
-   - `fscanf`  returns the number of successfully read items. In this case, it should return `2` if it successfully reads two integers from the file. The `!= 2` checks if the return value is **not** equal to 2, indicating that the expected number of items was **not** successfully read.
-
-   - `fclose` is invoked because the file was opened, and needs to be closed. This protects the file from curruption when the program closes with `return 1`
-
-6. We should also close the file when successfully read, do this by reproducing the `fclose` code on a new line outside of the closing brace of the `if(...){...`}
-=======
    - `fscanf` is for reading files and `scanf` is for reading from terminal input.
 
    - `fscanf` returns the number of successfully read items. In this case, it should return `2` if it successfully reads two integers from the file. The `!= 2` checks if the return value is **not** equal to 2, indicating that the expected number of items was **not** successfully read.
@@ -243,7 +185,6 @@ The program you will write assumes that there is an input file named `input.txt`
    - `fclose` is invoked because the file was opened, and needs to be closed. This protects the file from corruption when the program closes with `return 1`
 
 6. We should also close the file when successfully read, do this by reproducing the `fclose` code on a new line outside of the closing brace of the `if(...){...}`
->>>>>>> dev
 
 7. The calculation can now be performed, multiply `numOne` by `numTwo` and store in `result`
 
@@ -259,11 +200,7 @@ The program you will write assumes that there is an input file named `input.txt`
 
     </details>
 
-<<<<<<< HEAD
-8. In a similar fashion to step 4 we need to write to a new file, reproduce the following:
-=======
 8. Similarly to step 4 we need to write a new file, and reproduce the following:
->>>>>>> dev
 
     ```c
     // Open output file for writing
@@ -276,11 +213,7 @@ The program you will write assumes that there is an input file named `input.txt`
 
     - `fopen` opens the `"output.txt"` in write mode `"w"`
 
-<<<<<<< HEAD
-    - A check is made to see if the `outputFile` has any data, does the file exist, this is done with a `NULL` check.
-=======
     - A check is made to see if the `outputFile` has any data, and does the file exists, this is done with a `NULL` check.
->>>>>>> dev
 
     - If `NULL`, then the `perror` is invoked and outputs `"Error opening output file"` to standard error, and close the application with `return 1`, to indicate an error using an exit code. 
 
@@ -298,19 +231,11 @@ The program you will write assumes that there is an input file named `input.txt`
 
     - `fprintf` is for writing a formatted output to a file. It is similar to `printf`, but it writes to a file stream (`FILE*`).
     
-<<<<<<< HEAD
-    - `< 0` is a comparison that checks if the return value of fprintf is **less than** 0. `fprintf` returns the number of characters successfully written. If the return value is less than 0, it indicates an error occurred during writing.
-
-    - Again you see `perror()` for standard error and the addition of `fclose()` to close the file.
-
-10. On success the file needs to be close so after the `if(..){..}` add `fclose("outputFile)` and on a new line `printf("Operation completed successfully.\n");`
-=======
     - `< 0` is a comparison that checks if the return value of `fprintf` is **less than** 0. `fprintf` returns the number of characters successfully written. If the return value is less than 0, it indicates an error occurred during writing.
 
     - Again you see `perror()` for standard error and the addition of `fclose()` to close the file.
 
 10. On success, the file needs to be closed so after the `if(..){..}` add `fclose("outputFile)` and on a new line `printf("Operation completed successfully.\n");`
->>>>>>> dev
 
 11. Run the code and you should see the following outputs: 
 

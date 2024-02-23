@@ -61,16 +61,6 @@ The up and down arrow keys can be used to navigate the results, and enter will o
 After loading a search result, the matching search terms will be highlighted in the text.
 Clicking a highlighted word or pressing the `Esc` key will remove the highlighting.
 
-<<<<<<< HEAD
-You have the ability to change the theme of the mdBook by clicking the  icon on the top left mdBook. Additionally, there is a toggle for the table of content, and a search tool.
-## Issues
-
-If you notice a mistake you can notify the module team who can make the correction. You may be instructed to raise an actual github issue. 
-
-## Printing
-
-Currently the mdBook is approximately 60+ pages, and the environmental impact per page ~10.2L water, 2g CO\\(_2\\) and 2g wood. Therefore, ~600L water, 120g CO\\(_2\\) and 120g wood would be needed to produce a paper copy of this mdBook.
-=======
 You have the ability to change the theme of the mdBook by clicking the icon on the top left mdBook. Additionally, there is a toggle for the table of contents and a search tool.
 
 ## Issues
@@ -80,7 +70,6 @@ If you notice a mistake you can notify the module team who can make the correcti
 ## Printing
 
 Currently, the mdBook is approximately 60+ pages, and the environmental impact per page ~10.2L water, 2g CO\\(_2\\) and 2g wood. Therefore, ~600L water, 120g CO\\(_2\\) and 120g wood would be needed to produce a paper copy of this mdBook.
->>>>>>> dev
 
 The environmental effects of paper production include deforestation, the use of enormous amounts of energy and water as well as air pollution and waste problems. Paper accounts for around 26% of total waste at landfills
 
