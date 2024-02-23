@@ -1,10 +1,18 @@
 # Lab 6: C Pointers and Addressing
 
+<<<<<<< HEAD
 In this lab you will be introduce to pointers and addressing as tool to understand computer memory.
 
 1. Create a new C++ Console project called `PointersAndAddressing`.
 2. Remember to rename the `PointersAndAddressing.cpp` to `PointersAndAddressing.c`
 3. Open `PointersAndAddressing.c` and modify to look like below: 
+=======
+In this lab, you will be introduced to pointers and addressing as a tool to understand computer memory.
+
+1. Create a new C++ Console project called `PointersAndAddressing`.
+2. Remember to rename the `PointersAndAddressing.cpp` to `PointersAndAddressing.c`
+3. Open `PointersAndAddressing.c` and modify it to look like the below: 
+>>>>>>> dev
 
     ```c
     #include <stdio.h>
@@ -17,9 +25,15 @@ In this lab you will be introduce to pointers and addressing as tool to understa
 
 ## Section 1: Pointers
 
+<<<<<<< HEAD
 Now it's time to see the why C is used for the basis of nearly all programming languages, operating systems, and embedded code. 
 
 Pointers in C are relativley easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers. 
+=======
+Now it's time to see why C is used as the basis of nearly all programming languages, operating systems, and embedded code. 
+
+Pointers in C are relatively easy and fun to learn. Some C programming tasks are performed more easily with pointers, and other tasks, such as dynamic memory allocation, cannot be performed without using pointers. 
+>>>>>>> dev
 
 Therefore it is necessary to learn pointers to become a perfect C programmer.
 
@@ -27,7 +41,11 @@ Let's start learning them in simple and easy steps.
 
 Every variable is a memory location and every memory location has its address defined which can be accessed using ampersand `&` operator, which denotes an address in memory. 
 
+<<<<<<< HEAD
 4. Modify `main()` by entering the following code:
+=======
+1. Modify `main()` by entering the following code:
+>>>>>>> dev
 
     ```
     ...
@@ -51,7 +69,11 @@ Every variable is a memory location and every memory location has its address de
     </details>
 
 
+<<<<<<< HEAD
     So it looks like the address are almost next to each other, we call this **contiguous**.
+=======
+    So it looks like the addresses are almost next to each other, we call this **contiguous**.
+>>>>>>> dev
 
     > **Notes:**
     >> - We must use format specifiers to tell the `printf()` how we would like our variables to be displayed.
@@ -65,18 +87,30 @@ Every variable is a memory location and every memory location has its address de
 
      ![](./figures/step2.png)
 
+<<<<<<< HEAD
     You should have recieved different memory address locations, this because of the **Address Space Layout Randomiser** (ASLR) which provides a random address space for security reason. Consider if someone wanted to get certain information and new where it was stored all the time?
 
+=======
+    You should have received different memory address locations, because of the **Address Space Layout Randomiser** (ASLR) which provides a random address space for security reasons. Consider if someone wanted to get certain information and know where it was stored all the 
+>>>>>>> dev
     </details>
 
 
 ## Section 2: What are Pointers?
 
+<<<<<<< HEAD
 A **pointer** is a variable whose value is the address of another variable, i.e., direct address of the memory location. Like any variable or constant, you must declare a pointer before using it to store any variable address. The general form of a pointer variable declaration is `type var-name`.
 
 Here, type is the pointer's base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk `*` used to declare a pointer is the same asterisk used for multiplication. 
 
 However, in this statement the asterisk is being used to designate a variable as a pointer. Take a look at some of the valid pointer declarations:
+=======
+A **pointer** is a variable whose value is the address of another variable, i.e., the direct address of the memory location. Like any variable or constant, you must declare a pointer before using it to store any variable address. The general form of a pointer variable declaration is `type var-name`.
+
+Here, type is the pointer's base type; it must be a valid C data type and var-name is the name of the pointer variable. The asterisk `*` used to declare a pointer is the same asterisk used for multiplication. 
+
+However, in this statement, the asterisk is being used to designate a variable as a pointer. Take a look at some of the valid pointer declarations:
+>>>>>>> dev
 
 ```c
 int    *ip;    /* pointer to an integer */
@@ -95,9 +129,15 @@ To use the pointer, a C language feature, you must do the following steps:
 - **(b)** assign the address of a variable to a pointer, and 
 - **(c)** finally access the value at the address available in the pointer variable. 
 
+<<<<<<< HEAD
 This is done by using unary operator `*` that returns the value of the variable located at the address specified by its operand. The following example makes use of these operations.
 
 6. Again edit the contents of `main()` to match below:
+=======
+This is done by using the unary operator `*` that returns the value of the variable located at the address specified by its operand. The following example makes use of these operations.
+
+6. Again edit the contents of `main()` to match the below:
+>>>>>>> dev
 
     ``` c
     #include <stdio.h>
@@ -124,7 +164,11 @@ This is done by using unary operator `*` that returns the value of the variable 
     }
     ```
 
+<<<<<<< HEAD
 7. Run the code and you should see something similar to below,remember to compile first:
+=======
+7. Run the code and you should see something similar to below, remember to compile first:
+>>>>>>> dev
 
     <details>
     <summary><b>Click for Expected Output</b></summary>
@@ -194,10 +238,17 @@ Pointers have many but easy concepts and they are very important to `C` programm
    -  You can define arrays to hold a number of pointers.
 
 - **Pointer to pointer**
+<<<<<<< HEAD
    -  C allows you to have pointer on a pointer and so on.
 
 - **Passing pointers to functions in C**
    -  Passing an argument by reference or by address enable the passed argument to be changed in the calling function by the called function.
+=======
+   -  C allows you to have a pointer on a pointer and so on.
+
+- **Passing pointers to functions in C**
+   -  Passing an argument by reference or by address enables the passed argument to be changed in the calling function by the called function.
+>>>>>>> dev
 
 -  **Return pointer from functions in C**
    -  C allows a function to return a pointer to the local variable, static variable, and dynamically allocated memory as well.
@@ -207,11 +258,19 @@ Pointers have many but easy concepts and they are very important to `C` programm
 
 ## Section 6: Exploring the memory
 
+<<<<<<< HEAD
 Now we can explore memory in a more detail way.
 
 So one crucial thing to note here is that accessing memory locations and changes their values can be fatal for a system.
 
 It is relativley simple to access memory addresses around your own entry point, let's assume you assign a variable called `a` and then you get the memory address. After you have this address you have a starting pointing to explore.
+=======
+Now we can explore memory in a more detailed way.
+
+So one crucial thing to note here is that accessing memory locations and changing their values can be fatal for a system.
+
+It is relatively simple to access memory addresses around your entry point, let's assume you assign a variable called `a` and then you get the memory address. After you have this address you have a starting point to explore.
+>>>>>>> dev
 
 Modify `main()` with the following code snippets, remember to include the `#include<stdio.h>` and `int main(){return 0;}` lines of code:
 
@@ -249,7 +308,11 @@ Modify `main()` with the following code snippets, remember to include the `#incl
     }
     ```
 
+<<<<<<< HEAD
 5.  Inside the for loop between the braces { } enter this line to print out the values to console.
+=======
+5.  Inside the for loop between the braces { } enter this line to print out the values to the console.
+>>>>>>> dev
 
     ``` c
     printf(" %lu      ||    %d \t\t \n",(unsigned long)
@@ -257,7 +320,11 @@ Modify `main()` with the following code snippets, remember to include the `#incl
     pointer,(unsigned int)*pointer);
     ```
 
+<<<<<<< HEAD
 6.  Finally, we need to take one off of the pointer\'s value thereby decreasing the address. Add the following direcitly on the line below`printf();`
+=======
+6.  Finally, we need to take one off of the pointer\'s value thereby decreasing the address. Add the following directly on the line below `printf();`
+>>>>>>> dev
 
     ``` c
     pointer = pointer - 1;
@@ -295,7 +362,11 @@ Modify `main()` with the following code snippets, remember to include the `#incl
     </details>
 
 
+<<<<<<< HEAD
 7. Run the code and you should see something like below: 
+=======
+7. Run the code and you should see something like the below: 
+>>>>>>> dev
 
 
     <details>
@@ -311,21 +382,37 @@ Modify `main()` with the following code snippets, remember to include the `#incl
     >> Remember you will get different memory address and other than the `123456789` value the rest of the values are generally nonsense, unless they are used by the program.
 
 
+<<<<<<< HEAD
    - Now that the script has executed you can see we have a list of 10 memory addresses and the values those address hold.
 
    - Again we see **contiguous** memory seperated by 4 byte address spaces.
 
    - We can see our the that on the first time the loop executes we get the memory address of our variable `bin` and the subsequent value of stored in the address `123456789`.
+=======
+   - Now that the script has executed you can see we have a list of 10 memory addresses and the values those addresses hold.
+
+   - Again we see **contiguous** memory separated by 4 Byte address spaces.
+
+   - We can see the first time the loop executes we get the memory address of our variable `bin` and the subsequent value stored in the address `123456789`.
+>>>>>>> dev
 
    - However, we can also see that as the for loop continues looping through we get our list of memory addresses and values inside those memory addresses.
 
 ## Subsection 6.1: Arrays
 
+<<<<<<< HEAD
 So lets quickly look at arrays from a memory prespective.
 
 The `C` programming language can store arrays of any data type; `int`, `float`, `char`,... etc.
 
 8.  This time we will store a `char[]` and print out the each element of the array and the corresponding memory address which will be formatted as a hexadecimal number. Modifiy `main()` to look like the following code:
+=======
+So let's quickly look at arrays from a memory perspective.
+
+The `C` programming language can store arrays of any data type; `int`, `float`, `char`,... etc.
+
+8.  This time we will store a `char[]` and print out each element of the array and the corresponding memory address which will be formatted as a hexadecimal number. Modify `main()` to look like the following code:
+>>>>>>> dev
 
     ``` c
     #include<stdio.h>
@@ -386,7 +473,11 @@ To allocate memory dynamically, library functions are `malloc()`, `calloc()`, `r
 
 The name `malloc` stands for **m**emory **alloc**ation.
 
+<<<<<<< HEAD
 The `malloc()` function reserves a block of memory of the specified number of bytes. And, it returns a pointer of `void` which can be casted into pointers of any form.
+=======
+The `malloc()` function reserves a block of memory of the specified number of bytes. And, it returns a pointer of `void` which can be cast into pointers of any form.
+>>>>>>> dev
 
 ```c
 ptr = (castType*) malloc(size);
@@ -422,7 +513,11 @@ The above statement allocates contiguous space in memory for 25 elements of type
 
 ### Subsection 7.3: `free()`
 
+<<<<<<< HEAD
 Dynamically allocated memory created with either `calloc()` or `malloc()` doesn't get freed on their own. You must explicitly use `free()` to release the space.
+=======
+Dynamically allocated memory created with either `calloc()` or `malloc()` doesn't get freed on its own. You must explicitly use `free()` to release the space.
+>>>>>>> dev
 
 ```c
 free(ptr);
@@ -432,7 +527,11 @@ This statement frees the space allocated in the memory pointed by `ptr`.
 
 #### Example 1:
 
+<<<<<<< HEAD
 10. Modify `main()` again so that and reproduce the following code  so that the program dynamically allocates the memory for `n` number of `int`s using `malloc()` and `free()`:
+=======
+1.  Modify `main()` again and reproduce the following code  so that the program dynamically allocates the memory for `n` number of `int`s using `malloc()` and `free()`:
+>>>>>>> dev
 
     ```c
     // Program to calculate the sum of n numbers entered by the user
@@ -471,7 +570,11 @@ This statement frees the space allocated in the memory pointed by `ptr`.
     ```
 
 
+<<<<<<< HEAD
 11. Run the program and try to enter a number equal to or than greater that zero:
+=======
+2.  Run the program and try to enter a number equal to or greater than zero:
+>>>>>>> dev
 
     <details>
     <summary>Output...</summary>
@@ -536,7 +639,11 @@ Here, `ptr` is reallocated with a new size `x`.
 
 ### Example 3:
 
+<<<<<<< HEAD
 14. Modify `main()` again so that and reproduce the following code that dynamically allocates the memory for `n` number of `int` using `malloc()`, `realloc()` and `free()`:
+=======
+14. Modify `main()` again so that and reproduce the following code that dynamically allocates the memory for `n` number of `int` using `malloc()`, `realloc()`, and `free()`:
+>>>>>>> dev
 
     ```c
     #include <stdio.h>
@@ -569,7 +676,11 @@ Here, `ptr` is reallocated with a new size `x`.
     }
     ```
 
+<<<<<<< HEAD
 15. Run the program and remeber the enter a number equal to or greater than zero:
+=======
+15. Run the program and remember the enter a number equal to or greater than zero:
+>>>>>>> dev
 
 
     <details>
@@ -587,15 +698,27 @@ When applications need memory, they have to request it from the operating system
 
 The `malloc()` family of functions is responsible for memory allocation in the `C` language(which we have been doing for a few exercises). The question to ask here is whether `malloc()`, as a glibc function, makes a direct system call.
 
+<<<<<<< HEAD
 There is no system call called `malloc()` in the Linux kernel. However, there are two system calls for applications memory demands, which are `brk` and `mmap`.
 
 Since you will be requesting memory in your application via glibc functions, you may be wondering which of these system calls glibc is using at this point. The answer is both.
 
 Here is the graphic for memory allocation that we looked at the in the lecture, to remind you of key concepts.
+=======
+There is no system call called `malloc()` in the Linux kernel. However, there are two system calls for an application's memory demands, which are `brk` and `mmap`.
+
+Since you will be requesting memory in your application via glibc functions, you may be wondering which of these system calls glibc is using at this point. The answer is both.
+
+Here is the graphic for memory allocation, to remind you of key concepts.
+>>>>>>> dev
 
 ![](./figures/process_memory_application_graphic)
 
 
 ## Section 9: Extra work
 
+<<<<<<< HEAD
 Combine what you have learnt in this lab to advance your understanding of what you have achieved. 
+=======
+Combine what you have learned in this lab to advance your understanding of what you have achieved. 
+>>>>>>> dev

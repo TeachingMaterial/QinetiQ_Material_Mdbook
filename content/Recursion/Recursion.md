@@ -50,7 +50,11 @@ Recursion consists of **two** main components:
     }
     ```
 
+<<<<<<< HEAD
 3. Underneath the line `#include <stdio.h>` add the defintion of a new function called factorial that returns an `int` and takes one argument which is also an `int`.
+=======
+3. Underneath the line `#include <stdio.h>` add the definition of a new function called factorial that returns an `int` and takes one argument which is also an `int`.
+>>>>>>> dev
    <details>
    <summary>Solution</summary>
 
@@ -62,7 +66,11 @@ Recursion consists of **two** main components:
 
 <p></p>
 
+<<<<<<< HEAD
 4. After the closing `}` of `main()` write the factorial function that has just been defined, write the head and leave the body empty. 
+=======
+4. After the closing `}` of `main()` write the factorial function that has just been defined, write the head, and leave the body empty. 
+>>>>>>> dev
 
     <details>
     <summary>Solution</summary>
@@ -96,7 +104,11 @@ Recursion consists of **two** main components:
 
     </details>
 
+<<<<<<< HEAD
 6. Now add the recusive case which will be the `else` block. Write the `return` keyword after the inside the `else{}` block. Continuing on the same line multiply `n` to the result of the factorial function invocation (the recursion). The `factorial()`'s argument should be `n - 1`
+=======
+6. Now add the recrusive case which will be the `else` block. Write the `return` keyword after the inside the `else{}` block. Continuing on the same line multiply `n` to the result of the factorial function invocation (the recursion). The `factorial()`'s argument should be `n - 1`
+>>>>>>> dev
 
     <details>
     <summary>Possible Solution</summary>
@@ -114,9 +126,13 @@ Recursion consists of **two** main components:
     ```
 
     </details>
+<<<<<<< HEAD
 
 
 7. Now revist `main()` and create a variable called `result` which is of the data type `int` which stores the result of the `factorial(5)` as part of it's declaration and initilaisation. On the next line print the variable `result` the prepened string `"Factorial: "`
+=======
+Now revisit `main()` and create a variable called `result` which is of the data type `int` which stores the result of the `factorial(5)` as part of itws `declaration` and `initialisation`. On the next line print the variable `result` the prepended string `"Factorial: "`
+>>>>>>> dev
 
 
     <details>
@@ -146,7 +162,11 @@ Recursion consists of **two** main components:
 ```c
 printf("%d x %d = %d\n",n, (n-1), n * (n - 1));
 ```
+<<<<<<< HEAD
 10. Try printing and see what happens?
+=======
+10. Try printing and see what happens:
+>>>>>>> dev
 
     <details>
     <summary>Output</summary>
@@ -220,11 +240,19 @@ int factorial(int n) {
 
 ## Task 2.
 
+<<<<<<< HEAD
 In this task you will create a recursive function to generate the *n*th term of the Fibonacci series.
 
 <div align=center>
 
 0, 1, 1, 2, 3, 5 , 8, 13, 21, 34,…
+=======
+In this task, you will create a recursive function to generate the *n*th term of the Fibonacci series.
+
+<div align=center>
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34,…
+>>>>>>> dev
 
 </div>
 
@@ -322,19 +350,31 @@ Simplified the formula looks like:
 
     </div>
 
+<<<<<<< HEAD
 16. Modifying the fibonacci function more, you could try and output each result per recursion. Add the following `printf` call in the `else` block above the `return` line:
+=======
+16. Modifying the Fibonacci function more, you could try and output each result per recursion. Add the following `printf` call in the `else` block above the `return` line:
+>>>>>>> dev
 
 ```c
 printf("(%d - 1) + (%d - 2) = %d\n", n, n, (n - 1) + (n - 2));
 ```
+<<<<<<< HEAD
 10. Try running and see what happens?
+=======
+10. Try running and see what happens:
+>>>>>>> dev
 
     <details>
     <summary>Output...</summary>
 
     ![](./figures/step5.png)
 
+<<<<<<< HEAD
     Digrammitcally the program the recurison happens like this: 
+=======
+    Digrammitcally the program the recursion happens like this: 
+>>>>>>> dev
 
     
     ```sql

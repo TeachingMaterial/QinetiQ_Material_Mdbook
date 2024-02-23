@@ -1,6 +1,10 @@
 # Lab 7: Unions and Structs
 
+<<<<<<< HEAD
  - You need to open a new Visual Studio C++ Console Application, give it a meaningful name. 
+=======
+ - You need to open a new Visual Studio C++ Console Application and give it a meaningful name. 
+>>>>>>> dev
  - Remember to modify the file extension to `projectName.c` from `projectName.cpp`
  - Ensure the `projectName.c` file has the following structure:
  - ```c
@@ -25,7 +29,11 @@ Objective: Understand the concept of structs and their usage in C.
 
 2. Write a function `printPerson` that takes a `Person` `struct` as a parameter and prints its attributes.
 
+<<<<<<< HEAD
 3. In the main function, create an instance of the `Person` `struct`,populate its attributes with your name, age and height, and use the `printPerson` function to display the details.
+=======
+3. In the main function, create an instance of the `Person` `struct` and populate its attributes with your name, age and height, and use the `printPerson` function to display the details.
+>>>>>>> dev
 
 4. **Output:**
 
@@ -150,7 +158,11 @@ In this exercise we are going to explore the difference between and `struct` and
    - floatData (float)
    - CharData (char)
 
+<<<<<<< HEAD
 3. In `main` define a the `struct Person` as `person` and the `union Data` as `data` 
+=======
+3. In `main` define the `struct Person` as `person` and the `union Data` as `data` 
+>>>>>>> dev
 
 4. Reproduce the following code to assign `person.age` and `data.integerData` and `data.floatData`:
     ```c
@@ -168,7 +180,11 @@ In this exercise we are going to explore the difference between and `struct` and
     printf("Union Member - Float Data: %.2f\n", data.floatData);
     ```
 
+<<<<<<< HEAD
 5. Now we are going to compare the size of the `struct` and the `union`, reproduce the following after last `printf(...)` line:
+=======
+5. Now we are going to compare the size of the `struct` and the `union`, and reproduce the following after the last `printf(...)` line:
+>>>>>>> dev
    
     ```c
     ...

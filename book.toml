@@ -1,14 +1,14 @@
 [book]
 authors = ["Seb Blair"]
-title = "QinetiQ Material - University of Greenwich"
+title = "QinetiQ Material MdBook - University of Greenwich"
 language = "en"
 multilingual = false
 src = "content"
 
 [output.html]
 mathjax-support = true
-git-repository-url = "https://github.com/TeachingMaterial/QinetiQMaterial"
-edit-url-template = "https://github.com/TeachingMaterial/QinetiQMaterial/edit/master/{path}"
+git-repository-url = "https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook"
+edit-url-template = "https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook/edit/master/{path}"
 input-404 = "404/404.md"
 
 [output.html.print]

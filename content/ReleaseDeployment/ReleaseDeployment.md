@@ -13,7 +13,11 @@ You could follow the [**Gitflow**](https://www.atlassian.com/git/tutorials/compa
     - [Create and deploy a release](#create-and-deploy-a-release)
     - [Change in plan, pull a feature from a release](#change-in-plan-pull-a-feature-from-a-release)
     - [Supporting old releases](#supporting-old-releases)
+<<<<<<< HEAD
     - [Production hot fix](#production-hot-fix)
+=======
+    - [Production Hot Fix](#production-hot-fix)
+>>>>>>> dev
   - [Migrate a legacy project](#migrate-a-legacy-project)
 - [Scenarios](#scenarios)
   - [Deploying an Adaptive.js/Mobify.js Bundle to Production](#deploying-an-adaptivejsmobifyjs-bundle-to-production)
@@ -39,7 +43,11 @@ You could follow the [**Gitflow**](https://www.atlassian.com/git/tutorials/compa
 
 1. Make sure your `develop` branch is up-to-date
 
+<<<<<<< HEAD
 1. Create a feature branch based off of `develop`
+=======
+1. Create a feature branch based on `develop``
+>>>>>>> dev
 
    ```
    $ git checkout develop
@@ -114,11 +122,19 @@ There's nothing special about that. Each developer follows the above [Develop a 
    checklist. It will vary across projects, but you can refer to the Astro [Release](https://github.com/mobify/astro/blob/develop/RELEASE.md) document
    for an example.
 
+<<<<<<< HEAD
 1. At some point in the checklist you will merge the release branch into `master`.
    You can do this by using the "Merge pull request" button on the release PR.
 
 1. Now you are ready to create the actual release. Navigate to the project page
    on Github and draft a new release with the following settings:
+=======
+1. At some point in the checklist, you will merge the release branch into `master`.
+   You can do this by using the "Merge pull request" button on the release PR.
+
+1. Now you are ready to create the actual release. Navigate to the project page
+   on GitHub and draft a new release with the following settings:
+>>>>>>> dev
    * Tag version: `vX.Y.Z`
    * Target: `master`
    * Release title: `Release vX.Y.Z`
@@ -136,7 +152,11 @@ There's nothing special about that. Each developer follows the above [Develop a 
 1. Finish off the tasks in the release checklist. Once everything is done, close
    the release PR.
 
+<<<<<<< HEAD
 1. Delete the release branch on Github.
+=======
+1. Delete the release branch on GitHub.
+>>>>>>> dev
 
 ### Change in plan, pull a feature from a release
 
@@ -144,12 +164,19 @@ There's nothing special about that. Each developer follows the above [Develop a 
 Mike N: That probably means recreating the release branch, unless we have short-lived release branches
 
 ### Supporting old releases
+<<<<<<< HEAD
 
 In a release based project old releases can often need some maintenance. Critical bug fixes and strategic feature requests need to be supported on old releases. Old releases often become incompatible with the most recent versions of projects.
 
 In order to support old release versions gitflow has introduced the concept of support branches. Support branches are long living branches created to support major or minor versions of the project. Support branches do not get merged back into `master` or `develop` (this would cause major merge issues which are time consuming and error prone if attempted). Instead commits can be cherry picked from the support branch back into `develop`. 
 
 Support branches can be thought of as the `master` branch for old releases. Support branches for major releases should be named as `support-v<major>.x`. Support branches for minor releases should be named as `support-v<major>.<minor>.x`.
+=======
+In a release-based project old releases can often need some maintenance. Critical bug fixes and strategic feature requests need to be supported on old releases. Old releases often become incompatible with the most recent versions of projects.
+To support old release versions gitflow has introduced the concept of support branches. Support branches are long-living branches created to support major or minor versions of the project. Support branches do not get merged back into `master` or `develop` (this would cause major merge issues which are time-consuming and error-prone if attempted). Instead commits can be cherry-picked from the support branch back into `develop`. 
+
+Support branches can be thought of as the `master` branch for old releases. Support branches for major releases should be named `support-v<major>.x`. Support branches for minor releases should be named as `support-v<major>.<minor>.x`.
+>>>>>>> dev
 
 Here is an example of creating a support branch for v1.0 assuming v2.0 of the project has already been released.
 
@@ -170,6 +197,7 @@ Here is an example of creating a support branch for v1.0 assuming v2.0 of the pr
 
 1. Make changes in the `release-v1.0.1`. Multiple PRs can be merged into this branch if several changes are necessary.
 
+<<<<<<< HEAD
 1. As PRs are merged into the `release-v1.0.1` branch create associated PRs that cherry pick the changes back into `develop`. Ensure that these changes are desired by the team going forward and that they are compatible with the current state of the `develop` branch.
 
 1. Create release PR to merge `release-v1.0.1` into `support-v1.x`.
@@ -186,11 +214,33 @@ Here is an example of creating a support branch for v1.0 assuming v2.0 of the pr
 A production hotfix is very similar to a full-scale release except that you do
 your work in a branch taken directly off of `master`. Hotfixes are useful in cases
 where you want to patch a bug in a released version, but `develop` has unreleased
+=======
+1. As PRs are merged into the `release-v1.0.1` branch create associated PRs that cherry-pick the changes back into `develop`. Ensure that these changes are desired by the team going forward and that they are compatible with the current state of the `develop` branch.
+
+1. Create release PR to merge `release-v1.0.1` into `support-v1.x`.
+
+1. Follow the standard release process treating `support-v1.x` as the `master` branch. As per the standard release process, `release-v1.0.1` will get deleted and `support-v1.x` will remain in repo indefinitely.
+
+1. Mark `support-v1.x` as a protected branch in GitHub so that it does not get accidentally deleted.
+
+*Pro-tip*: Try to maintain as few support branches as possible. These branches are expensive to maintain since you will need to cherry-pick applicable bug fixes into each support branch separately.
+
+
+### Production Hot Fix
+
+A production hotfix is very similar to a full-scale release except that you do
+your work in a branch taken directly off of `master`. Hotfixes are useful in cases
+where you want to patch a bug in a released version but `develop` has unreleased
+>>>>>>> dev
 code in it already.
 
 **TBD: Insert diagram**
 
+<<<<<<< HEAD
 1. Create a hot fix branch based off of `master`.
+=======
+1. Create a hot-fix branch based on the `master`.
+>>>>>>> dev
 
    ```
    $ git checkout master
@@ -214,11 +264,19 @@ code in it already.
    Paste your release checklist into the PR and work through the PR to get the
    hotfix into production.
 
+<<<<<<< HEAD
 1. At some point in the checklist you will merge the hotfix branch into `master`.
   You can do this by using the "Merge pull request" button on the release PR.
 
 1. Now that the hotfix code is in `master` you are ready to create the actual
    release. Navigate to the project page on Github and draft a new release with
+=======
+1. At some point in the checklist, you will merge the hotfix branch into `master`.
+  You can do this by using the "Merge pull request" button on the release PR.
+
+1. Now that the hotfix code is in `master` you are ready to create the actual
+   release. Navigate to the project page on GitHub and draft a new release with
+>>>>>>> dev
    the following settings:
    * Tag version: `vX.Y.Z`
    * Target: `master`
@@ -288,9 +346,15 @@ The process for tagging and merging is a bit different when deploying a bundle, 
 	- [ ] Clean Up Repo
    ```
 
+<<<<<<< HEAD
 1. Once the customer has approved the bundle. The bundle is published to production and post launch tests occur. Once all tests have passed, the pull request is merged into `master`.
 
 1. Finish the _Github release workflow_ as described above and ensure that these specific changes are added to the _release notes_ draft of the _Github release_:
+=======
+1. Once the customer has approved the bundle. The bundle is published to production and post-launch tests occur. Once all tests have passed, the pull request is merged into `master`.
+
+1. Finish the _Github release workflow_ as described above and ensure that these specific changes are added to the _release notes_ draft of the _GitHub release_:
+>>>>>>> dev
    * Release title: `Release vX.Y.Z - Bundle <number>`
    * Description: This should also include a link to a confluence JIRA report page that lists all issues in the release.
 
