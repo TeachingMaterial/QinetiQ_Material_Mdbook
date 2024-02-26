@@ -26,6 +26,12 @@
 
 ------
 
+# Control
+
+- [Introduction To Control](IntroductionToControl/IntroductionToControl.md)
+- [PID Controllers](PIDControllers/PIDControllers.md)
+------
+
 # VHDL
 
 ------
