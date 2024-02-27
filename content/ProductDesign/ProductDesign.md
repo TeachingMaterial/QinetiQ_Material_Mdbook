@@ -1,6 +1,6 @@
 # Introduction
 
-... 
+Here we will be looking at the theory and providing guidance on product design.
 
 ## 1. Specifying the Requirements
 The design of electronic systems or devices usually starts with an approach from a customer asking if you make something that does ‘X’.  This statement is usually very broad and sometimes ill defined.  
