@@ -178,101 +178,221 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>Here we will be looking at the theory and providing guidance on product design.</p>
+<p>Here we will be looking at the theory and providing guidance on product design.  There are many methodologies and considerations when designing an electronic system.  The following is a good example of a development methodology and the questions that need answering before starting on the design.</p>
 <h2 id="1-specifying-the-requirements"><a class="header" href="#1-specifying-the-requirements">1. Specifying the Requirements</a></h2>
-<p>The design of electronic systems or devices usually starts with an approach from a customer asking if you make something that does ‘X’.  This statement is usually very broad and sometimes ill defined.</p>
+<p>The design of electronic systems or devices usually starts with an approach from a customer asking if you make something that does ‘X’.  This statement is usually very broad and sometimes ill-defined.</p>
 <p>As the Engineer, your role at this stage in the process is to help the customer fully understand what they want and to help them specify the goal completely, so there are no misunderstandings or misinterpretations as the project develops or when the product is delivered.</p>
 <p>Your objective is to reduce risk and exposure of all parties.</p>
 <p>The advantages of this are manifold; the customer is happy, the project runs smoother, there is no wasted effort and the whole process is quicker.  It is easier and cheaper to make changes in the product design, the earlier in the process they take place.</p>
 <hr />
 <h2 id="2-product-requirements-document"><a class="header" href="#2-product-requirements-document">2. Product Requirements Document</a></h2>
-<p>Once you have fully captured the requirements of the customer, a Product Requirements Document (PRD) can be produced and agreed upon.  This can be as simple as a single page, right up to a comprehensive document.  Which route depends on the size of the project.  Typical sections of the PRD include:-</p>
+<p>Once you have fully captured the requirements of the customer, a Product Requirements Document (PRD) can be produced and agreed upon.  This can be as simple as a single page, right up to a comprehensive document.  Which route depends on the size of the project?  Typical sections of the PRD include:-</p>
 <ul>
 <li>
-<p><strong>Introduction</strong> – Provides an overview of the product, its purpose, and objectives.</p>
+<p><strong>Introduction</strong></p>
+<ul>
+<li>Provides an overview of the product, its purpose, and objectives.</li>
+</ul>
 </li>
 <li>
-<p><strong>Scope</strong> – Typically this would define the boundaries of the product, specifying what is included and what is not, outlining the features, functions, and components of the product.</p>
+<p><strong>Scope</strong></p>
+<ul>
+<li>Typically this would define the boundaries of the product</li>
+<li>specifying what is included and what is not,</li>
+<li>outlining the features, functions, and components of the product.</li>
+</ul>
 </li>
 <li>
-<p><strong>Functional Requirements</strong> - Describes the specific functionalities and tasks that the product should perform.  This section details the behaviour of the product under various scenarios and user interactions.</p>
+<p><strong>Functional Requirements</strong></p>
+<ul>
+<li>Describes the specific functionalities and tasks that the product should perform.</li>
+<li>This section details the behaviour of the product under various scenarios and user interactions.</li>
+</ul>
 </li>
 <li>
-<p><strong>Non-Functional Requirements</strong> – Specifies the quality attributes and performance characteristics of the product.  This includes requirements related to performance, reliability, security, usability, accessibility, and compliance with standards.</p>
+<p><strong>Non-Functional Requirements</strong></p>
+<ul>
+<li>Specifies the quality attributes and performance characteristics of the product.</li>
+<li>This includes requirements related to performance, reliability, security, usability, accessibility, and compliance with standards.</li>
+</ul>
 </li>
 <li>
-<p><strong>Product in use</strong> – This would state detailed descriptions of where and how the product will be used.  This is key.  Sometimes statements such as ‘the device must work in minus twenty degrees centigrade’, although very clear and easy to understand and build to, do not tell the real or whole story.</p>
+<p><strong>Product in use</strong></p>
+<ul>
+<li>This would state detailed descriptions of where and how the product will be used.  This is key.</li>
+<li>Sometimes statements such as ‘the device must work in minus twenty degrees centigrade’, although very clear and easy to understand and build to, do not tell the real or whole story.</li>
+</ul>
 </li>
 <li>
-<p><strong>Data Requirements</strong> – In this section would be specified the capture rates, storage method, formats, volumes and transfer protocols.</p>
+<p><strong>Data Requirements</strong></p>
+<ul>
+<li>In this section would be specified the capture rates, storage method, formats, volumes, and transfer protocols.</li>
+</ul>
 </li>
 <li>
-<p><strong>Technical requirements</strong> – This section outlines the hardware, software, and infrastructure requirements necessary for the development and deployment of the product.</p>
+<p><strong>Technical requirements</strong></p>
+<ul>
+<li>This section outlines the hardware, software, and infrastructure requirements necessary for the development and deployment of the product.</li>
+</ul>
 </li>
 <li>
-<p><strong>Constraints, Compromises and Assumptions</strong> – Here are identified any limitations, constraints, dependencies, or assumptions that may impact the development or implementation of the product.  This includes budget constraints, time constraints, quality constraints, resource limitations, and technological dependencies.  Also, the priorities if there are conflicts.</p>
+<p><strong>Constraints, Compromises, and Assumptions</strong></p>
+<ul>
+<li>Here are identified any limitations, constraints, dependencies, or assumptions that may impact the development or implementation of the product.</li>
+<li>This includes budget constraints, time constraints, quality constraints, resource limitations, and technological dependencies.</li>
+<li>Also, the priorities if there are conflicts.</li>
+</ul>
 </li>
 <li>
-<p><strong>User Interface Design</strong> – What is required, and usually harder than you initially think.  Take for example something as simple as a push button.  How hard does it have to be pressed, for how long, does it need to be protected from accidental presses, does it need to be waterproof, glow, does the colour change when activated, how bright, what level of debounce, etc, etc.  With this one example it is easy to see how important and challenging it can be to get the specification correct.</p>
+<p><strong>User Interface Design</strong></p>
+<ul>
+<li>What is required, and usually harder than you initially think.</li>
+<li>Take for example something as simple as a push button.
+<ul>
+<li>How hard does it have to be pressed?</li>
+<li>For how long, does it need to be protected from accidental presses?</li>
+<li>Does it need to be waterproof?</li>
+<li>Does the colour change when activated?
+<ul>
+<li>how bright?</li>
+</ul>
+</li>
+<li>What level of debounce, etc?</li>
+</ul>
+</li>
+<li>With this one example, it is easy to see how important and challenging it can be to get the specification correct.</li>
+</ul>
 </li>
 <li>
-<p><strong>Testing</strong> – What testing is required to ensure the customer is happy with the completed product, or how the Engineer will know they have designed a successful product.</p>
+<p><strong>Testing</strong></p>
+<ul>
+<li>What testing is required to ensure the customer is happy with the completed product, or how the Engineer will know they have designed a successful product?</li>
+</ul>
 </li>
 <li>
-<p><strong>Timelines and Milestones</strong> - Provides an overview of the project timeline, including key milestones, deliverables, and deadlines. It helps stakeholders understand the project schedule and track progress throughout the development process.  This would also include handover specifications.</p>
+<p><strong>Timelines and Milestones</strong></p>
+<ul>
+<li>Provides an overview of the project timeline, including key milestones, deliverables, and deadlines.</li>
+<li>It helps stakeholders understand the project schedule and track progress throughout the development process.</li>
+<li>This would also include handover specifications.</li>
+</ul>
 </li>
 </ul>
 <h3 id="22-writing-a-prd"><a class="header" href="#22-writing-a-prd">2.2 Writing a PRD</a></h3>
 <p>A well-written PRD serves as a communication tool between all parties involved in the project, ensuring alignment and clarity throughout the product development lifecycle.</p>
-<p>There are many more headings that can be used in the PRD, including specifying software methodology, processes to be followed, compliances and standards.</p>
+<p>Many more headings can be used in the PRD, including specifying software methodology, processes to be followed, compliances, and standards.</p>
 <p>Usually, large organisations will have a standard document and process for completing these.  If the organisation does not have one, the above will serve as a good base.</p>
 <hr />
 <h2 id="3-project-management-triangle"><a class="header" href="#3-project-management-triangle">3. Project Management Triangle</a></h2>
-<p>Within Engineering you have the Time, Quality and Cost triangle.</p>
+<p>Within Engineering, you have the Time, Quality, and Cost triangle.</p>
 <p>You can have any two of the three design restrictions, but you can’t have all three.  The customer needs to understand this when they ask for the perfect device to be ready now, cheaply.</p>
 <div align=center>
 <p><img src="./figures/PMTriangle.png" alt="" /></p>
-<p><strong>Triangle showing the relationship between Time, costing and quality</strong></p>
+<p><strong>Triangle showing the relationship between Time, Costing, and Quality</strong></p>
 </div>
 <hr />
 <h2 id="5-electronic-system-specific-design-criteria"><a class="header" href="#5-electronic-system-specific-design-criteria">5. Electronic System Specific Design Criteria</a></h2>
 <p>As this course focuses on electronic system design, the key fundamentals the Engineer needs to know and understand, to enable them to produce a suitable product, are:-</p>
 <ul>
 <li>
-<p><strong>Inputs</strong> – What inputs will the device get.  Typical inputs can include, buttons, keypads, light, voltage, current, radio frequency energy.</p>
+<p><strong>Inputs</strong></p>
+<ul>
+<li>What inputs will the device get?
+<ul>
+<li>Typical inputs can include, buttons, keypads, light, voltage, current, radio frequency energy.</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>Outputs</strong> – Lights, screens/GUI, voltage, current, radio frequency energy.  These output signals can then be transformed into motion such as a solenoid actuating.</p>
+<p><strong>Outputs</strong></p>
+<ul>
+<li>Lights, screens/GUI, voltage, current, radio frequency energy
+<ul>
+<li>These output signals can then be transformed into motion such as a solenoid actuating.</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>Weight</strong> – Typically the lighter something is required to be, the higher the cost.  This is usually where the first compromise will have to be made.  Using exotic materials, devices can be made strong and light, however, there will be a cost in both financial and time dimensions.  Usually, these relationships are not linear.</p>
+<p><strong>Weight</strong></p>
+<ul>
+<li>
+<p>Typically the lighter something is required to be, the higher the cost.</p>
 </li>
 <li>
-<p><strong>Power consumption</strong> – The lower the power consumption, the longer the battery life, or the smaller/cheaper the battery.  Another nonlinear compromise.  Ask the questions and see what the customer wants and is willing to compromise on.</p>
+<p>This is usually where the first compromise will have to be made.</p>
 </li>
 <li>
-<p><strong>Size</strong> – Everyone wants as small a device as possible, until cost becomes an issue, then there will need to be a compromise.</p>
+<p>Using exotic materials, devices can be made strong and light, however, there will be a cost in both financial and time dimensions.  Usually, these relationships are not linear.</p>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>Operating temperature and humidity ranges</strong> – Battery power and electronic components don’t like operating at the extremes.  Some systems are better than others.</p>
+<p><strong>Power consumption</strong></p>
+<ul>
+<li>The lower the power consumption, the longer the battery life, or the smaller/cheaper the battery.</li>
+<li>Another nonlinear compromise.</li>
+<li>Ask the questions and see what the customer wants and is willing to compromise on.</li>
+</ul>
 </li>
 <li>
-<p><strong>Storage temperature and humidity ranges</strong> – As above and below.</p>
+<p><strong>Size</strong></p>
+<ul>
+<li>Everyone wants as small a device as possible until cost becomes an issue, then there will need to be a compromise.</li>
+</ul>
 </li>
 <li>
-<p><strong>Temperature and humidity cycles</strong> – Cycles are the killer for electronic components.  As they heat and cool, any joints or connections are stressed, which can lead to failure.</p>
+<p><strong>Operating temperature and humidity ranges</strong></p>
+<ul>
+<li>Battery power and electronic components don’t like operating at extremes.</li>
+<li>Some systems are better than others.</li>
+</ul>
 </li>
 <li>
-<p><strong>Vibration testing</strong> – Understand any vibration (the frequencies, durations, amplitudes and repetitions) the device will encounter and test for that.  Or have the customer sign off they are happy with the design and the decision not to test.</p>
+<p><strong>Storage temperature and humidity ranges</strong></p>
+<ul>
+<li>As above and below.</li>
+</ul>
 </li>
 <li>
-<p><strong>Electromagnetic emissions</strong> – As well as designed emissions, such as input signals, electronic systems emit unintended radio frequency energy.  Good design can reduce this down to acceptable levels, so can housing design.</p>
+<p><strong>Temperature and humidity cycles</strong></p>
+<ul>
+<li>Cycles are the killer of electronic components.
+<ul>
+<li>As they heat and cool, any joints or connections are stressed, which can lead to failure.</li>
+</ul>
+</li>
+</ul>
 </li>
 <li>
-<p><strong>Electromagnetic susceptibility</strong> – Electronic systems can malfunction due to external electromagnetic energy getting into the device.  Any hole in an otherwise sealed container, such as screens, switches and LEDs can lead to interference.  Good design, such as suitable cases and circuit design can stop any issues.</p>
+<p><strong>Vibration testing</strong></p>
+<ul>
+<li>Understand any vibration (the frequencies, durations, amplitudes, and repetitions) the device will encounter and test for that.</li>
+<li>Or have the customer sign off they are happy with the design and the decision not to test.</li>
+</ul>
 </li>
 <li>
-<p><strong>Start up time</strong> – Some devices need to be used instantly, without time to wake up from a sleep mode or to boot up when turned on.  This will decide which ‘platform’ is most suitable.</p>
+<p><strong>Electromagnetic emissions</strong></p>
+<ul>
+<li>As well as designed emissions, such as output signals, electronic systems emit unintended radio frequency energy.</li>
+<li>Good design can reduce this down to acceptable levels, and so can housing design.</li>
+</ul>
+</li>
+<li>
+<p><strong>Electromagnetic susceptibility</strong></p>
+<ul>
+<li>Electronic systems can malfunction due to external electromagnetic energy getting into the device.</li>
+<li>Any hole in an otherwise sealed container, such as screens, switches, and LEDs can lead to interference.</li>
+<li>Good design, such as suitable cases and circuit design can stop any issues.</li>
+</ul>
+</li>
+<li>
+<p><strong>Start up time</strong></p>
+<ul>
+<li>Some devices need to be used instantly, without time to wake up from a sleep mode or to boot up when turned on.</li>
+<li>This will decide which ‘platform’ is most suitable.</li>
+</ul>
 </li>
 </ul>
 <hr />
@@ -280,29 +400,53 @@
 <p>The following considerations are more to do with the casing the devices will be mounted in.  However, an Electronic Engineer should always be cognisant of the issues:</p>
 <ul>
 <li>
-<p><strong>Water tightness and corrosion</strong> – Where will the device be used.</p>
+<p><strong>Water tightness and corrosion</strong></p>
+<ul>
+<li>Where will the device be used?</li>
+</ul>
 </li>
 <li>
-<p><strong>Drop and impact testing</strong> – Solid state equipment is less susceptible to shocks and knocks.  That doesn’t mean that they are impervious.  Get a specification and testing regime.</p>
+<p><strong>Drop and impact testing</strong></p>
+<ul>
+<li>Solid state equipment is less susceptible to shocks and knocks.</li>
+<li>That doesn’t mean that they are impervious.</li>
+<li>Get a specification and testing regime.</li>
+</ul>
 </li>
 <li>
-<p><strong>Life of device</strong> – Some devices will have a service use of up to 10 years storage and then one use.  Others might have a service life of three years, used all day every day.  By understanding what is expected of the device, design considerations can be made.</p>
+<p><strong>Life of device</strong></p>
+<ul>
+<li>Some devices will have a service use of up to 10 years of storage and then one use.</li>
+<li>Others might have a service life of three years, used all day every day.</li>
+<li>By understanding what is expected of the device, design considerations can be made.</li>
+</ul>
 </li>
 <li>
-<p><strong>Spare parts availability</strong> – Some devices might have a service life of 20 years.  Will spares be available to make replacement ones or to repair existing ones.</p>
+<p><strong>Spare parts availability</strong></p>
+<ul>
+<li>Some devices might have a service life of 20 years.</li>
+<li>Will spares be available to make replacement ones or to repair existing ones?</li>
+</ul>
 </li>
 <li>
-<p><strong>Quantity</strong> – If the device is going to be a one off, or be made in very small batches, with long intervals between their drawdown at short notice, although unprofessional looking, an Arduino with the sensors mounted on Veroboard (the circuit boards with strips of copper and full of holes), inside a Commercial Off The Shelf (COTS) box might be sufficient.  That said, with Additive Layer Manufacturing (ALM), suitable bespoke enclosures are easy to produce.
-,</p>
+<p><strong>Quantity</strong></p>
+<ul>
+<li>If the device is going to be a one off, or be made in very small batches, with long intervals between their drawdown at short notice, although unprofessional looking, an Arduino with the sensors mounted on Veroboard (the circuit boards with strips of copper and full of holes), inside a Commercial Off The Shelf (COTS) box might be sufficient.</li>
+<li>That said, with Additive Layer Manufacturing (ALM), suitable bespoke enclosures are easy to produce.</li>
+</ul>
 </li>
 </ul>
+<div align=center>
+<p><img src="./figures/stripboard-shield-parts.jpg" alt="" /></p>
+<p><strong>Arduino Uno with ATMega328p and VeroBoard with pins</strong></p>
+</div>
 <hr />
 <h2 id="7-specification-sheets"><a class="header" href="#7-specification-sheets">7. Specification Sheets</a></h2>
-<p>All chipsets, platforms and technologies will come with a design specification sheet, or an information sheet.  These will explain the tolerances each component of system is tested to work under.  The supplier or the internet will have them.</p>
+<p>All chipsets, platforms, and technologies will come with a design specification sheet or an information sheet.  These will explain the tolerances each component of the system is tested to work.  The supplier or the internet will have them.</p>
 <hr />
 <h2 id="8-designing-the-system"><a class="header" href="#8-designing-the-system">8. Designing the System</a></h2>
 <p>Between the Inputs and Outputs of a device, there is a ‘black box’ area.  This it the area the Electronic Engineer works in and creates a device that solves the customer’s issues.</p>
-<p>As always with electronics and Engineering in general, there are many other questions that could be asked, depending on the sector and organisation you are working for.  Typically, a large organisation will have a check list or document to work off.</p>
+<p>As always with electronics and Engineering in general, many other questions could be asked, depending on the sector and organisation you are working for.  Typically, a large organisation will have a checklist or document to work off.</p>
 <hr />
 <h2 id="9-prototyping-and-platforms"><a class="header" href="#9-prototyping-and-platforms">9. Prototyping and Platforms</a></h2>
 <p>It is very tempting to dive straight down into the design of the electronic system and get it working straight away.  Especially with a relatively simple system.  However, it is well established that projects take between two and three times the resources initially thought.  This is one of humanity’s traits, we are optimistic by nature.</p>
@@ -310,7 +454,7 @@
 <h2 id="92-block-diagram--architecture-design"><a class="header" href="#92-block-diagram--architecture-design">9.2 Block Diagram – Architecture Design</a></h2>
 <ul>
 <li>
-<p>This stage is high-level architecture of the system, what are the main components, communication protocols and interfaces?</p>
+<p>This stage is high-level architecture of the system, what are the main components, communication protocols, and interfaces?</p>
 </li>
 <li>
 <p>This allows you to select appropriate technologies and platforms based on requirements and constraints and perform feasibility studies to evaluate different design options quickly and cheaply.</p>
@@ -319,7 +463,7 @@
 <p>Working from the PRD, sketch a simplified diagram of the electronic system to be designed.  A large square, with arrows on the left going in for inputs, and arrows on the right going out for the outputs.  Next to each arrow describe the signal.</p>
 </li>
 <li>
-<p>For the inputs it could be as simple as a digital button or an analogue signal between one and five volts, with a resolution of 128 steps, with the sampling rate of 1 millisecond.</p>
+<p>For the inputs, it could be as simple as a digital button or an analogue signal between one and five volts, with a resolution of 128 steps, with a sampling rate of 1 millisecond.</p>
 </li>
 <li>
 <p>Do the same with the output signals.</p>
@@ -332,7 +476,7 @@
 </li>
 </ul>
 <h2 id="93-breadboardprototype-boardarduinoraspberry-pi"><a class="header" href="#93-breadboardprototype-boardarduinoraspberry-pi">9.3 Breadboard/Prototype Board/Arduino/Raspberry Pi</a></h2>
-<p>With a little experience and a catalogue, it is possible to select the most suitable device to develop the prototype on.  In bygone times real breadboards were used as a base for prototyping.  Then plastic broads design for the purpose were developed.  These are ideal for mounting external components, such as sensors, passive, and analogue components quickly without soldering.</p>
+<p>With a little experience and a catalogue, it is possible to select the most suitable device to develop the prototype on.  In bygone times real breadboards were used as a base for prototyping.  Then plastic broads designed for the purpose were developed.  These are ideal for mounting external components, such as sensors, passive, and analogue components quickly without soldering.</p>
 <p>Most electronic system design is now done on an Arduino or Raspberry Pi, even if some people refuse to admit it or look down on this method.  In these modern systems favour, they are quick, there is a lot of work done for you already, and they work.</p>
 <p>There are many different Arduino and Raspberry Pi main boards and input and output boards that can be connected straight to the main boards.  Each board has its own strengths and weaknesses mainly around price, size, speed, and input and output ports.</p>
 <div align=center>
@@ -341,13 +485,30 @@
 </div>
 <ol>
 <li>
-<p>Select the main board that suits your requirements, starting with processing power, the type of input and outputs port.  Then memory available on the board.  Finally cost.</p>
+<p>Select the main board that suits your requirements:</p>
+<ul>
+<li>Starting with processing power,</li>
+<li>and the type of input and output port.</li>
+<li>The memory is available on the board.</li>
+<li>Finally cost.</li>
+</ul>
 </li>
 <li>
-<p>After constructing the hardware, upload the software you have concurrently developed and test the system against the design specification.</p>
+<p>After constructing the hardware,</p>
+<ul>
+<li>Upload the software you have concurrently developed and test the system against the design specification.</li>
+</ul>
 </li>
 <li>
-<p>Work through the fault-finding methodologies of dividing the system into sections and testing each section is working, and you have cleared all the faults and the whole system is working as designed.  A simple few lines in this document, but a stage that may take a very long time.  Do not despair, with practice this stage becomes easier.  There maybe many iterations in this stage.</p>
+<p>Work through the fault-finding methodologies of:</p>
+<ul>
+<li>Dividing the system into sections and testing each section is working</li>
+<li>Clear all the faults</li>
+<li>Then whole system is working as designed.</li>
+</ul>
+<blockquote>
+<p>A simple few lines in this document, but a stage that may take a very long time.  Do not despair, with practice this stage becomes easier.  There maybe many iterations in this stage.</p>
+</blockquote>
 </li>
 <li>
 <p>Test this system from an electronic operational point of view.</p>
@@ -367,12 +528,12 @@
 <p>Different organisations have their preferred system.  If you do not get sufficient training on how to use the systems at your organisation, the forums and YouTube are your friend and usually the founts of all knowledge.</p>
 </li>
 <li>
-<p>Enter all the data you know of, and these systems will translate your schematic and requirements into an optimised <strong>F</strong>ield <strong>P</strong>rogrammable <strong>G</strong>ate <strong>A</strong>rray (<strong>FPGA</strong>) based, board design.</p>
+<p>Enter all the data you know of, and these systems will translate your schematic and requirements into an optimised <strong>F</strong>ield <strong>P</strong>rogrammable <strong>G</strong>ate <strong>A</strong>rray (<strong>FPGA</strong>) based board design.</p>
 </li>
 </ul>
 </li>
 <li>
-<p>If there are any outstanding conflicts at this stage such as size, weight or cost, present them to the customer, with proposed solutions, for example reduced availability, performance, or expensive materials and the associated costs.  Then ask them what they want to do.</p>
+<p>If there are any outstanding conflicts at this stage such as size, weight, or cost, present them to the customer, with proposed solutions, for example, reduced availability, performance, or expensive materials and the associated costs.  Then ask them what they want to do.</p>
 </li>
 <li>
 <p>Have a board or a small batch of boards printed.</p>
@@ -389,7 +550,7 @@
 </ul>
 </li>
 <li>
-<p>Once you are happy the system performs, put it through the official testing process as specified in the PRD.</p>
+<p>Once you are happy with how the system performs, put it through the official testing process as specified in the PRD.</p>
 </li>
 <li>
 <p>If the system passes, get the design signed off by the customer and produce as required.</p>
