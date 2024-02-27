@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Product Design - QinetiQ Material MdBook - University of Greenwich</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../Introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Session Slides</li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.</strong> Software Considerations</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> Electrica/Electronic Considerations</div></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Product Design</li><li class="chapter-item expanded "><a href="../ProductDesign/ProductDesign.html" class="active"><strong aria-hidden="true">3.</strong> Product Design</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Basics</li><li class="chapter-item expanded "><a href="../Learning_C/Learning_C.html"><strong aria-hidden="true">4.</strong> Learning C</a></li><li class="chapter-item expanded "><a href="../BitwiseOperations/BitwiseOperations.html"><strong aria-hidden="true">5.</strong> Bitewise Operations</a></li><li class="chapter-item expanded "><a href="../ArithmeticOperations/ArithmeticOperations.html"><strong aria-hidden="true">6.</strong> Arithmetic Operations</a></li><li class="chapter-item expanded "><a href="../Recursion/Recursion.html"><strong aria-hidden="true">7.</strong> Recursion</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Intermediate</li><li class="chapter-item expanded "><a href="../HeaderFilesGuardsMacros/HeaderFilesGuardsMacros.html"><strong aria-hidden="true">8.</strong> Header Files, Guards, and Macros</a></li><li class="chapter-item expanded "><a href="../PointersAndAddressing/PointersAndAddressing.html"><strong aria-hidden="true">9.</strong> Pointers and Addressing</a></li><li class="chapter-item expanded "><a href="../UnionsAndStructs/UnionsAndStructs.html"><strong aria-hidden="true">10.</strong> Structs and Unions</a></li><li class="chapter-item expanded "><a href="../Streams/Streams.html"><strong aria-hidden="true">11.</strong> Streams</a></li><li class="chapter-item expanded "><a href="../Algorithms/Algorithms.html"><strong aria-hidden="true">12.</strong> Algorithms</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">13.</strong> Code Conventions</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">14.</strong> Documentation</div></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Control</li><li class="chapter-item expanded "><a href="../IntroductionToControl/IntroductionToControl.html"><strong aria-hidden="true">15.</strong> Introduction To Control</a></li><li class="chapter-item expanded "><a href="../PIDControllers/PIDControllers.html"><strong aria-hidden="true">16.</strong> PID Controllers</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">VHDL</li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="../myFirstRepository/myFirstRepository.html"><strong aria-hidden="true">17.</strong> My First Repository</a></li><li class="chapter-item expanded "><a href="../BashAliases/BashAliases.html"><strong aria-hidden="true">18.</strong> Bash Aliases</a></li><li class="chapter-item expanded "><a href="../BranchingModel/BranchingModel.html"><strong aria-hidden="true">19.</strong> Branching-Strategy</a></li><li class="chapter-item expanded "><a href="../OneFlow/OneFlow.html"><strong aria-hidden="true">20.</strong> Git Oneflow</a></li><li class="chapter-item expanded "><a href="../AntiPatterns/AntiPatterns.html"><strong aria-hidden="true">21.</strong> Anti Patterns</a></li><li class="chapter-item expanded "><a href="../ContinousDeployment/ContinousDeployment.html"><strong aria-hidden="true">22.</strong> Continous Deployment</a></li><li class="chapter-item expanded "><a href="../ReleaseDeployment/ReleaseDeployment.html"><strong aria-hidden="true">23.</strong> Release Deployment</a></li><li class="chapter-item expanded "><a href="../Migration/Migration.html"><strong aria-hidden="true">24.</strong> Migration</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">QinetiQ Material MdBook - University of Greenwich</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/TeachingMaterial/QinetiQ_Material_Mdbook/edit/master/content/ProductDesign/ProductDesign.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>...</p>
+<h2 id="1-specifying-the-requirements"><a class="header" href="#1-specifying-the-requirements">1. Specifying the Requirements</a></h2>
+<p>The design of electronic systems or devices usually starts with an approach from a customer asking if you make something that does ‘X’.  This statement is usually very broad and sometimes ill defined.</p>
+<p>As the Engineer, your role at this stage in the process is to help the customer fully understand what they want and to help them specify the goal completely, so there are no misunderstandings or misinterpretations as the project develops or when the product is delivered.</p>
+<p>Your objective is to reduce risk and exposure of all parties.</p>
+<p>The advantages of this are manifold; the customer is happy, the project runs smoother, there is no wasted effort and the whole process is quicker.  It is easier and cheaper to make changes in the product design, the earlier in the process they take place.</p>
+<hr />
+<h2 id="2-product-requirements-document"><a class="header" href="#2-product-requirements-document">2. Product Requirements Document</a></h2>
+<p>Once you have fully captured the requirements of the customer, a Product Requirements Document (PRD) can be produced and agreed upon.  This can be as simple as a single page, right up to a comprehensive document.  Which route depends on the size of the project.  Typical sections of the PRD include:-</p>
+<ul>
+<li>
+<p><strong>Introduction</strong> – Provides an overview of the product, its purpose, and objectives.</p>
+</li>
+<li>
+<p><strong>Scope</strong> – Typically this would define the boundaries of the product, specifying what is included and what is not, outlining the features, functions, and components of the product.</p>
+</li>
+<li>
+<p><strong>Functional Requirements</strong> - Describes the specific functionalities and tasks that the product should perform.  This section details the behaviour of the product under various scenarios and user interactions.</p>
+</li>
+<li>
+<p><strong>Non-Functional Requirements</strong> – Specifies the quality attributes and performance characteristics of the product.  This includes requirements related to performance, reliability, security, usability, accessibility, and compliance with standards.</p>
+</li>
+<li>
+<p><strong>Product in use</strong> – This would state detailed descriptions of where and how the product will be used.  This is key.  Sometimes statements such as ‘the device must work in minus twenty degrees centigrade’, although very clear and easy to understand and build to, do not tell the real or whole story.</p>
+</li>
+<li>
+<p><strong>Data Requirements</strong> – In this section would be specified the capture rates, storage method, formats, volumes and transfer protocols.</p>
+</li>
+<li>
+<p><strong>Technical requirements</strong> – This section outlines the hardware, software, and infrastructure requirements necessary for the development and deployment of the product.</p>
+</li>
+<li>
+<p><strong>Constraints, Compromises and Assumptions</strong> – Here are identified any limitations, constraints, dependencies, or assumptions that may impact the development or implementation of the product.  This includes budget constraints, time constraints, quality constraints, resource limitations, and technological dependencies.  Also, the priorities if there are conflicts.</p>
+</li>
+<li>
+<p><strong>User Interface Design</strong> – What is required, and usually harder than you initially think.  Take for example something as simple as a push button.  How hard does it have to be pressed, for how long, does it need to be protected from accidental presses, does it need to be waterproof, glow, does the colour change when activated, how bright, what level of debounce, etc, etc.  With this one example it is easy to see how important and challenging it can be to get the specification correct.</p>
+</li>
+<li>
+<p><strong>Testing</strong> – What testing is required to ensure the customer is happy with the completed product, or how the Engineer will know they have designed a successful product.</p>
+</li>
+<li>
+<p><strong>Timelines and Milestones</strong> - Provides an overview of the project timeline, including key milestones, deliverables, and deadlines. It helps stakeholders understand the project schedule and track progress throughout the development process.  This would also include handover specifications.</p>
+</li>
+</ul>
+<h3 id="22-writing-a-prd"><a class="header" href="#22-writing-a-prd">2.2 Writing a PRD</a></h3>
+<p>A well-written PRD serves as a communication tool between all parties involved in the project, ensuring alignment and clarity throughout the product development lifecycle.</p>
+<p>There are many more headings that can be used in the PRD, including specifying software methodology, processes to be followed, compliances and standards.</p>
+<p>Usually, large organisations will have a standard document and process for completing these.  If the organisation does not have one, the above will serve as a good base.</p>
+<hr />
+<h2 id="3-project-management-triangle"><a class="header" href="#3-project-management-triangle">3. Project Management Triangle</a></h2>
+<p>Within Engineering you have the Time, Quality and Cost triangle.</p>
+<p>You can have any two of the three design restrictions, but you can’t have all three.  The customer needs to understand this when they ask for the perfect device to be ready now, cheaply.</p>
+<div align=center>
+<p><img src="./figures/PMTriangle.png" alt="" /></p>
+<p><strong>Triangle showing the relationship between Time, costing and quality</strong></p>
+</div>
+<hr />
+<h2 id="5-electronic-system-specific-design-criteria"><a class="header" href="#5-electronic-system-specific-design-criteria">5. Electronic System Specific Design Criteria</a></h2>
+<p>As this course focuses on electronic system design, the key fundamentals the Engineer needs to know and understand, to enable them to produce a suitable product, are:-</p>
+<ul>
+<li>
+<p><strong>Inputs</strong> – What inputs will the device get.  Typical inputs can include, buttons, keypads, light, voltage, current, radio frequency energy.</p>
+</li>
+<li>
+<p><strong>Outputs</strong> – Lights, screens/GUI, voltage, current, radio frequency energy.  These output signals can then be transformed into motion such as a solenoid actuating.</p>
+</li>
+<li>
+<p><strong>Weight</strong> – Typically the lighter something is required to be, the higher the cost.  This is usually where the first compromise will have to be made.  Using exotic materials, devices can be made strong and light, however, there will be a cost in both financial and time dimensions.  Usually, these relationships are not linear.</p>
+</li>
+<li>
+<p><strong>Power consumption</strong> – The lower the power consumption, the longer the battery life, or the smaller/cheaper the battery.  Another nonlinear compromise.  Ask the questions and see what the customer wants and is willing to compromise on.</p>
+</li>
+<li>
+<p><strong>Size</strong> – Everyone wants as small a device as possible, until cost becomes an issue, then there will need to be a compromise.</p>
+</li>
+<li>
+<p><strong>Operating temperature and humidity ranges</strong> – Battery power and electronic components don’t like operating at the extremes.  Some systems are better than others.</p>
+</li>
+<li>
+<p><strong>Storage temperature and humidity ranges</strong> – As above and below.</p>
+</li>
+<li>
+<p><strong>Temperature and humidity cycles</strong> – Cycles are the killer for electronic components.  As they heat and cool, any joints or connections are stressed, which can lead to failure.</p>
+</li>
+<li>
+<p><strong>Vibration testing</strong> – Understand any vibration (the frequencies, durations, amplitudes and repetitions) the device will encounter and test for that.  Or have the customer sign off they are happy with the design and the decision not to test.</p>
+</li>
+<li>
+<p><strong>Electromagnetic emissions</strong> – As well as designed emissions, such as input signals, electronic systems emit unintended radio frequency energy.  Good design can reduce this down to acceptable levels, so can housing design.</p>
+</li>
+<li>
+<p><strong>Electromagnetic susceptibility</strong> – Electronic systems can malfunction due to external electromagnetic energy getting into the device.  Any hole in an otherwise sealed container, such as screens, switches and LEDs can lead to interference.  Good design, such as suitable cases and circuit design can stop any issues.</p>
+</li>
+<li>
+<p><strong>Start up time</strong> – Some devices need to be used instantly, without time to wake up from a sleep mode or to boot up when turned on.  This will decide which ‘platform’ is most suitable.</p>
+</li>
+</ul>
+<hr />
+<h2 id="6-casing"><a class="header" href="#6-casing">6. Casing</a></h2>
+<p>The following considerations are more to do with the casing the devices will be mounted in.  However, an Electronic Engineer should always be cognisant of the issues:</p>
+<ul>
+<li>
+<p><strong>Water tightness and corrosion</strong> – Where will the device be used.</p>
+</li>
+<li>
+<p><strong>Drop and impact testing</strong> – Solid state equipment is less susceptible to shocks and knocks.  That doesn’t mean that they are impervious.  Get a specification and testing regime.</p>
+</li>
+<li>
+<p><strong>Life of device</strong> – Some devices will have a service use of up to 10 years storage and then one use.  Others might have a service life of three years, used all day every day.  By understanding what is expected of the device, design considerations can be made.</p>
+</li>
+<li>
+<p><strong>Spare parts availability</strong> – Some devices might have a service life of 20 years.  Will spares be available to make replacement ones or to repair existing ones.</p>
+</li>
+<li>
+<p><strong>Quantity</strong> – If the device is going to be a one off, or be made in very small batches, with long intervals between their drawdown at short notice, although unprofessional looking, an Arduino with the sensors mounted on Veroboard (the circuit boards with strips of copper and full of holes), inside a Commercial Off The Shelf (COTS) box might be sufficient.  That said, with Additive Layer Manufacturing (ALM), suitable bespoke enclosures are easy to produce.
+,</p>
+</li>
+</ul>
+<hr />
+<h2 id="7-specification-sheets"><a class="header" href="#7-specification-sheets">7. Specification Sheets</a></h2>
+<p>All chipsets, platforms and technologies will come with a design specification sheet, or an information sheet.  These will explain the tolerances each component of system is tested to work under.  The supplier or the internet will have them.</p>
+<hr />
+<h2 id="8-designing-the-system"><a class="header" href="#8-designing-the-system">8. Designing the System</a></h2>
+<p>Between the Inputs and Outputs of a device, there is a ‘black box’ area.  This it the area the Electronic Engineer works in and creates a device that solves the customer’s issues.</p>
+<p>As always with electronics and Engineering in general, there are many other questions that could be asked, depending on the sector and organisation you are working for.  Typically, a large organisation will have a check list or document to work off.</p>
+<hr />
+<h2 id="9-prototyping-and-platforms"><a class="header" href="#9-prototyping-and-platforms">9. Prototyping and Platforms</a></h2>
+<p>It is very tempting to dive straight down into the design of the electronic system and get it working straight away.  Especially with a relatively simple system.  However, it is well established that projects take between two and three times the resources initially thought.  This is one of humanity’s traits, we are optimistic by nature.</p>
+<p>There are many electronic system design methodologies available.  The one described below contains many stages and it may not be necessary for all projects.</p>
+<h2 id="92-block-diagram--architecture-design"><a class="header" href="#92-block-diagram--architecture-design">9.2 Block Diagram – Architecture Design</a></h2>
+<ul>
+<li>
+<p>This stage is high-level architecture of the system, what are the main components, communication protocols and interfaces?</p>
+</li>
+<li>
+<p>This allows you to select appropriate technologies and platforms based on requirements and constraints and perform feasibility studies to evaluate different design options quickly and cheaply.</p>
+</li>
+<li>
+<p>Working from the PRD, sketch a simplified diagram of the electronic system to be designed.  A large square, with arrows on the left going in for inputs, and arrows on the right going out for the outputs.  Next to each arrow describe the signal.</p>
+</li>
+<li>
+<p>For the inputs it could be as simple as a digital button or an analogue signal between one and five volts, with a resolution of 128 steps, with the sampling rate of 1 millisecond.</p>
+</li>
+<li>
+<p>Do the same with the output signals.</p>
+</li>
+<li>
+<p>Within the central box, use a flowchart to explain what happens to the input signals to produce the correct outputs.</p>
+</li>
+<li>
+<p>With this information stabilised, it is possible to move on to the next stage.</p>
+</li>
+</ul>
+<h2 id="93-breadboardprototype-boardarduinoraspberry-pi"><a class="header" href="#93-breadboardprototype-boardarduinoraspberry-pi">9.3 Breadboard/Prototype Board/Arduino/Raspberry Pi</a></h2>
+<p>With a little experience and a catalogue, it is possible to select the most suitable device to develop the prototype on.  In bygone times real breadboards were used as a base for prototyping.  Then plastic broads design for the purpose were developed.  These are ideal for mounting external components, such as sensors, passive, and analogue components quickly without soldering.</p>
+<p>Most electronic system design is now done on an Arduino or Raspberry Pi, even if some people refuse to admit it or look down on this method.  In these modern systems favour, they are quick, there is a lot of work done for you already, and they work.</p>
+<p>There are many different Arduino and Raspberry Pi main boards and input and output boards that can be connected straight to the main boards.  Each board has its own strengths and weaknesses mainly around price, size, speed, and input and output ports.</p>
+<div align=center>
+<p><img src="./figures/microControllersCollage.png" alt="" /></p>
+<p><strong>A suite of Raspberry Pi (ARM) and Arduino development boards(ATMega)</strong></p>
+</div>
+<ol>
+<li>
+<p>Select the main board that suits your requirements, starting with processing power, the type of input and outputs port.  Then memory available on the board.  Finally cost.</p>
+</li>
+<li>
+<p>After constructing the hardware, upload the software you have concurrently developed and test the system against the design specification.</p>
+</li>
+<li>
+<p>Work through the fault-finding methodologies of dividing the system into sections and testing each section is working, and you have cleared all the faults and the whole system is working as designed.  A simple few lines in this document, but a stage that may take a very long time.  Do not despair, with practice this stage becomes easier.  There maybe many iterations in this stage.</p>
+</li>
+<li>
+<p>Test this system from an electronic operational point of view.</p>
+</li>
+</ol>
+<hr />
+<h2 id="94-preproduction-prototype-schematic-design-and-printed-circuit-board-pcb-design"><a class="header" href="#94-preproduction-prototype-schematic-design-and-printed-circuit-board-pcb-design">9.4 Preproduction Prototype, Schematic design and Printed Circuit Board (PCB) design</a></h2>
+<p>Now you have an electronic system that works correctly, it is time to specify its final form that also meets the physical characteristics of the specification.</p>
+<ol>
+<li>
+<p>If you have not already, create a schematic diagram of how the components are connected.</p>
+<ul>
+<li>
+<p>Use Electronic Design Automation (EDA) software to do this.  There are many systems available.</p>
+</li>
+<li>
+<p>Different organisations have their preferred system.  If you do not get sufficient training on how to use the systems at your organisation, the forums and YouTube are your friend and usually the founts of all knowledge.</p>
+</li>
+<li>
+<p>Enter all the data you know of, and these systems will translate your schematic and requirements into an optimised <strong>F</strong>ield <strong>P</strong>rogrammable <strong>G</strong>ate <strong>A</strong>rray (<strong>FPGA</strong>) based, board design.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If there are any outstanding conflicts at this stage such as size, weight or cost, present them to the customer, with proposed solutions, for example reduced availability, performance, or expensive materials and the associated costs.  Then ask them what they want to do.</p>
+</li>
+<li>
+<p>Have a board or a small batch of boards printed.</p>
+<ul>
+<li>
+<p>It is common for organisations that do electronic system design to have these facilities on site.</p>
+</li>
+<li>
+<p>If not, there are many companies that provide this service.</p>
+</li>
+<li>
+<p>They will also assemble the boards for you if you wish for you to upload the software later.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Once you are happy the system performs, put it through the official testing process as specified in the PRD.</p>
+</li>
+<li>
+<p>If the system passes, get the design signed off by the customer and produce as required.</p>
+<ul>
+<li>
+<p>As with the initial stage of the design of the system, for manufacturing, even if you are doing it in-house, it is recommended to specify as much as possible.</p>
+</li>
+<li>
+<p>Typical specifications about the components used include the manufacturer of the components, method of soldering, type of solder, and testing.</p>
+</li>
+</ul>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../Learning_C/Learning_C.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../Learning_C/Learning_C.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
