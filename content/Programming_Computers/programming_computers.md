@@ -19,7 +19,7 @@ We will be using <https://gcc.godbolt.org> which is an interactive compiler expl
 
 ## Basics of C
 
-Throughout this lab you will can refer to documentation for the soruce code and the compiled code.
+Throughout this lab you can refer to documentation for the source code and the compiled code.
 
 Go to [https://gcc.godbolt.org/z/6hTG88doT](https://gcc.godbolt.org/z/6hTG88doT) to access a blank script in C.
 
@@ -47,7 +47,7 @@ A quick break down of what we are seeing here:
 
 - Line 1 has the functions name and a returnable keyword, `int`. This means that when `main()` executes and reaches the end of the script it will return an integer to indicate it has finished to the hosts environment.
 - Line 3 introduces the keyword `return` which will return a value, in this ase 0, an `int`
-- Lines 2 an 4 have the identifiers `{ }`, this encapsulates the code into a block. The compiler needs this syntax to understand where a block of code starts and finishes.
+- Lines 2 an 4 have the identifiers `{ }`, which encapsulates the code into a block. The compiler needs this syntax to understand where a block of code starts and finishes.
 
 As you were entering the source code into the window 1, you will have seen the second window compiling the code in real-time. Your assembly
 code should look like below.
@@ -108,14 +108,14 @@ Firstly, looking at lines 4 and 5, we can see that the value 5 is stored in memo
   movl $5, -8(%rbp)
 ```
 
-Next we can see that lines 6 and 7 reference the addresses of the two values by accessing the addresses located 4 and 8 bytes away from the `%rdp` and get ready to perform artimetic operations by storing using `%edx` and `%eax`.
+Next, we can see that lines 6 and 7 reference the addresses of the two values by accessing the addresses located 4 and 8 bytes away from the `%rdp` and get ready to perform arithmetic operations by storing using `%edx` and `%eax`.
 
 ```nasm
   movl -4(%rbp), %edx
   movl -8(%rbp), %eax
 ```
 
-Ok so finally we can see that lines 8, 9 and 10 deal with summation of the variables `a` and `b`.
+Ok so finally we can see that lines 8, 9, and 10 deal with the summation of the variables `a` and `b`.
 
 ```nasm
   addl %edx, %eax
@@ -125,7 +125,7 @@ Ok so finally we can see that lines 8, 9 and 10 deal with summation of the varia
 
 Notice we have a new keyword, `addl`, we are now adding the two values stored in the addresses pointed to by `%edx` and `%eax`.
 
-The code then tempoarily stores the result in `%eax` and moves it memory address 12 bytes away from the `%rdp`. Finally, `%eax` is zeroed off so it does not point to anything.
+The code then temporarily stores the result in `%eax` and moves its memory address 12 bytes away from the `%rdp`. Finally, `%eax` is zeroed off so it does not point to anything.
 
 
 **CALL TO ACTION**
@@ -149,7 +149,7 @@ int main()
 }
 ```
 
-Lets do something that includes window 3, the console/terminal. As long as you code has been compiling fine the output displayed should be...
+Let's do something that includes window 3, the console/terminal. As long as you code has been compiling fine the output displayed should be...
 
 `Program returned: 0`
 
@@ -177,7 +177,7 @@ If you don't include this library with the source code you will see the error, l
 
 ![Missing Library](Figures/ConsoleError.PNG)
 
-Lets look at line 6, we can see we are using a new function that comes from the `stdio.h` library, `printf()`.
+Let's look at line 6, we can see we are using a new function that comes from the `stdio.h` library, `printf()`.
 
 ```c
 printf("%d = 5 + 5",sum);
@@ -221,13 +221,13 @@ Looking over this code, we can see 5 new lines. The first line `.LC0:` means loc
   .string "%d = 5 + 5"
 ```
 
-The next new line is 6, reserves 16 bytes of memory for local variables, we have a string now.
+The next new line is 6, which reserves 16 bytes of memory for local variables, we have a string now.
 
 ```nasm
   subq $16, %rsp
 ```
 
-The fourth new line,9, points the address of the result of the sum to `%esi`. `%esi` links to the `printf()` function where it passes the value of this address into `%d` format specifier.
+The fourth new line,9, points to the address of the result of the sum to `%esi`. `%esi` links to the `printf()` function where it passes the value of this address into `%d` format specifier.
 
 ```nasm
 movl %eax, %esi
@@ -272,8 +272,7 @@ What differences can you see, in the compiled code?
 
 Now you have a look two basic operations in C and analysed the compile code, lets look at Python which you may find easier to understand.
 
-Unlike C and other languages, Python doesn't need you to define data types, ints, floats, chars, string etc. and therefore is consider loose
-typed.
+Unlike C and other languages, Python doesn't need you to define data types, ints, floats, chars, string etc. and therefore is considered loosely typed.
 
 Select Python from the drop down list in the window 1, top right. Or go here...[https://godbolt.org/z/7dbb69Gxh](https://godbolt.org/z/7dbb69Gxh)
 
@@ -435,9 +434,9 @@ b : Integer := 5;
 c : Integer;
 ```
 
-As stated earlier Ada code language is strongly typed, and as such you have to define the data types for each variable. Unlike C/C++/C#/Java etc. the identifier `a`, `b` and `c` comes before the data type keyword `Integer` which is the preceded by the assigned value, `5`, that is compatible with that data type.
+As stated earlier Ada code language is strongly typed, and as such you have to define the data types for each variable. Unlike C/C++/C#/Java etc. the identifiers `a`, `b` and `c` comes before the data type keyword `Integer` which is preceded by the assigned value, `5`, that is compatible with that data type.
 
-So lets look at the assembly code. Well this should look familiar to you now... if not revisit the earlier section on C.
+So let's look at the assembly code. Well, this should look familiar to you now... if not revisit the earlier section on C.
 
 ```nasm
 _ada_main:
