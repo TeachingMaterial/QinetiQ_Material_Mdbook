@@ -21,7 +21,7 @@
 - [Recursion](Recursion/Recursion.md)
 - [Programming a Computer](Programming_Computers/programming_computers.md)
 - [Communication Script](Communication_Scripts/Communication_Scripts.md)
-
+- [Heli Code Base](Heli_Code/Heli_Code.md)
 -------------------------------------
 
 # Intermediate
