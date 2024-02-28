@@ -1,6 +1,6 @@
 # Introduction
 
-You can access the code base for Heli-by-copter here -> [Heli_Code](./Heli_Code.zip).
+You can access the code base for Heli-by-copter here -> [Heli_Balance](./Heli_Balance.zip).
 
 >Note: You need to Arduino Studio IDE either locally installed or Online
 >
