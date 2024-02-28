@@ -19,6 +19,8 @@
 - [Bitewise Operations](BitwiseOperations/BitwiseOperations.md)
 - [Arithmetic Operations](ArithmeticOperations/ArithmeticOperations.md)
 - [Recursion](Recursion/Recursion.md)
+- [Programming a Computer](Programming_Computers/programming_computers.md)
+- 
 -------------------------------------
 
 # Intermediate
@@ -37,6 +39,7 @@
 
 - [Introduction To Control](IntroductionToControl/IntroductionToControl.md)
 - [PID Controllers](PIDControllers/PIDControllers.md)
+
 ------
 
 # VHDL
