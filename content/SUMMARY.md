@@ -3,8 +3,8 @@
 
 # Session Slides
 
-- [Software Considerations]()
-- [Electrica/Electronic Considerations]()
+- [Software Considerations](https://teachingmaterial.github.io/QinetiQ_Software_Considerations/content/SoftwareConsiderations.html)
+- [Electrica/Electronic Considerations - coming soon]()
 -------
 
 # Product Design

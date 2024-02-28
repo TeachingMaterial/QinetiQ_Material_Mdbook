@@ -1,6 +1,6 @@
 # Introduction
 
-First block of code shows UART using the abstracted C/C++ in Arduino Developement Environment.
+First block of code shows UART using the abstracted C/C++ in Arduino Development Environment.
 
 ```c
 /*
